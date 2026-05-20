@@ -1,0 +1,4087 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Aurah By Koyel | Advanced Skin & Hair Clinic | Where Beauty Meets
+      Precision
+    </title>
+    <meta
+      name="description"
+      content="Aurah By Koyel – Premium skin & hair clinic offering advanced acne treatments, pigmentation solutions, anti-aging, hair regrowth, laser treatments & more. Book your free consultation today."
+    />
+    <meta
+      name="keywords"
+      content="skin clinic Mumbai, hair treatment clinic, acne treatment, pigmentation treatment, anti-aging, hair fall control, laser hair reduction, hydrafacial, luxury skin clinic"
+    />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Aurah By Koyel",
+        "description": "Advanced skin and hair treatment clinic offering premium dermatology services",
+        "url": "https://aurahbykoyel.com",
+        "telephone": "+91-9123093939",
+        "email": "aurahbykoyel@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bazar, near Duke School, Dakshin Jhapardah, Domjur",
+          "addressLocality": "Howrah, Jhapardah",
+          "addressRegion": "West Bengal",
+          "postalCode": "711405",
+          "addressCountry": "IN"
+        },
+        "sameAs": ["https://instagram.com/aurahbykoyel2026"]
+      }
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --black: #000000;
+        --gold: #d4af37;
+        --gold-light: #e8cc6a;
+        --gold-dark: #a88b1f;
+        --beige: #f8f5f0;
+        --beige-dark: #ede8df;
+        --white: #ffffff;
+        --glass: rgba(255, 255, 255, 0.04);
+        --glass-border: rgba(212, 175, 55, 0.2);
+        --text-muted: rgba(248, 245, 240, 0.55);
+        --gold-grad: linear-gradient(
+          135deg,
+          #bf953f 0%,
+          #fcf6ba 25%,
+          #b38728 50%,
+          #fbf5b7 75%,
+          #aa771c 100%
+        );
+        --gold-grad-light: linear-gradient(
+          135deg,
+          #e5c07b 0%,
+          #f3ebc0 50%,
+          #c49a5b 100%
+        );
+        --gold-text-grad: linear-gradient(
+          135deg,
+          #d4af37 0%,
+          #f7e6a7 50%,
+          #b3923b 100%
+        );
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Jost", sans-serif;
+        background: var(--black);
+        color: var(--beige);
+        overflow-x: hidden;
+        cursor: default;
+      }
+
+      /* Grain overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.4;
+      }
+
+      /* ─── TYPOGRAPHY ─── */
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 6vw, 5rem);
+        letter-spacing: -0.01em;
+      }
+
+      h2 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+      }
+
+      h3 {
+        font-size: clamp(1.3rem, 2vw, 1.8rem);
+      }
+
+      .gold {
+        background: var(--gold-text-grad);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      /* ─── NAV ─── */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 5%;
+        transition: all 0.4s ease;
+        background: transparent;
+      }
+
+      nav.scrolled {
+        background: rgba(0, 0, 0, 0.92);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--glass-border);
+        padding: 0.9rem 5%;
+      }
+
+      .nav-logo {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+      }
+
+      .nav-logo-main {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: var(--gold);
+      }
+
+      .nav-logo-sub {
+        font-family: "Jost", sans-serif;
+        font-size: 0.6rem;
+        letter-spacing: 0.3em;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        font-family: "Jost", sans-serif;
+        font-size: 0.78rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--gold);
+      }
+
+      .nav-cta {
+        background: var(--gold);
+        color: var(--black) !important;
+        padding: 0.6rem 1.6rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.72rem !important;
+        transition: transform 0.2s !important;
+        border: none;
+      }
+
+      .nav-cta:hover {
+        background: var(--gold-light) !important;
+        transform: translateY(-1px);
+      }
+
+      /* ─── HERO ─── */
+      #hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 140px 5% 60px;
+        /* Added proper space from top */
+      }
+
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background: #000000;
+      }
+
+      .hero-lines {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(212, 175, 55, 0.06) 1px, transparent 1px);
+        background-size: 80px 80px;
+        mask-image: radial-gradient(
+          ellipse 70% 70% at 50% 50%,
+          black 20%,
+          transparent 100%
+        );
+      }
+
+      .hero-deco-circle {
+        position: absolute;
+        right: -5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: min(55vw, 650px);
+        height: min(55vw, 650px);
+        border-radius: 50%;
+        border: 1px solid rgba(212, 175, 55, 0.12);
+        background: transparent;
+      }
+
+      .hero-deco-circle::before {
+        content: "";
+        position: absolute;
+        inset: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(212, 175, 55, 0.08);
+      }
+
+      .hero-deco-circle::after {
+        content: "";
+        position: absolute;
+        inset: 80px;
+        border-radius: 50%;
+        border: 1px solid rgba(212, 175, 55, 0.05);
+      }
+
+      .hero-image-container {
+        position: absolute;
+        right: 5%;
+        top: calc(50% + 40px);
+        /* Shifted down to match text */
+        transform: translateY(-50%);
+        width: min(42vw, 520px);
+        height: min(60vw, 700px);
+        overflow: hidden;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      }
+
+      .hero-image-placeholder {
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-image-placeholder::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: transparent;
+      }
+
+      .hero-silhouette {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        opacity: 0.3;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 620px;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        padding: 0.4rem 1.2rem;
+        border-radius: 100px;
+        font-size: 0.72rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .hero-badge-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--gold);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        50% {
+          opacity: 0.5;
+          transform: scale(0.8);
+        }
+      }
+
+      .hero-tagline {
+        font-family: "Jost", sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 1.2rem;
+        font-weight: 300;
+      }
+
+      .hero h1 {
+        color: var(--beige);
+        margin-bottom: 1.5rem;
+      }
+
+      .hero h1 em {
+        color: var(--gold);
+        font-style: italic;
+      }
+
+      .hero-sub {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: var(--text-muted);
+        margin-bottom: 2.5rem;
+        font-weight: 300;
+        max-width: 480px;
+      }
+
+      .hero-ctas {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: var(--gold);
+        color: var(--black);
+        padding: 1rem 2.2rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+      }
+
+      .btn-primary::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--gold-light);
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+      }
+
+      .btn-primary:hover::before {
+        transform: translateX(0);
+      }
+
+      .btn-primary span {
+        position: relative;
+        z-index: 1;
+      }
+
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: transparent;
+        color: var(--beige);
+        padding: 1rem 2.2rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid rgba(248, 245, 240, 0.25);
+        transition: all 0.3s ease;
+      }
+
+      .btn-secondary:hover {
+        border-color: var(--gold-light);
+        color: var(--gold-light);
+      }
+
+      .hero-trust {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+      }
+
+      .trust-icon {
+        width: 28px;
+        height: 28px;
+        border: 1px solid var(--glass-border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        color: var(--gold);
+      }
+
+      /* ─── SECTION SHARED ─── */
+      section {
+        padding: 6rem 5%;
+      }
+
+      .section-label {
+        font-family: "Jost", sans-serif;
+        font-size: 0.68rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .section-label::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: var(--gold);
+        opacity: 0.6;
+      }
+
+      .section-title {
+        margin-bottom: 1.5rem;
+      }
+
+      .section-sub {
+        color: var(--text-muted);
+        line-height: 1.8;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      /* ─── ABOUT ─── */
+      #about {
+        background: #000000;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #about::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background: transparent;
+        pointer-events: none;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        align-items: center;
+      }
+
+      .about-visual {
+        position: relative;
+      }
+
+      .about-img-wrap {
+        width: 100%;
+        aspect-ratio: 3/4;
+
+        position: relative;
+        overflow: hidden;
+      }
+
+      .about-img-inner {
+        position: absolute;
+        inset: 0;
+        background: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        opacity: 0.4;
+      }
+
+      .about-stat-box {
+        position: absolute;
+        bottom: -2rem;
+        right: -2rem;
+        background: var(--gold-grad);
+        padding: 1.5rem;
+        color: var(--black);
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .about-stat-item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .about-stat-num {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1;
+        display: block;
+      }
+
+      .about-stat-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-top: 0.3rem;
+        display: block;
+        opacity: 0.8;
+      }
+
+      .about-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 2.5rem;
+      }
+
+      .about-feature {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        padding: 1.2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .about-feature-icon {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--gold);
+      }
+
+      .about-feature-title {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        color: var(--beige);
+        margin-bottom: 0.3rem;
+      }
+
+      .about-feature-text {
+        font-size: 0.72rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ─── SERVICES ─── */
+      #services {
+        background: #000000;
+        position: relative;
+      }
+
+      .services-header {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 4rem;
+      }
+
+      .services-header .section-label {
+        justify-content: center;
+      }
+
+      .services-header .section-label::before {
+        display: none;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        background: transparent;
+      }
+
+      .service-card {
+        background: #000000;
+        border: 1px solid var(--glass-border);
+        padding: 2.5rem;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .service-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.02);
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+
+      .service-card:hover::before {
+        opacity: 1;
+      }
+
+      .service-card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--gold);
+        transition: width 0.4s ease;
+      }
+
+      .service-card:hover::after {
+        width: 100%;
+      }
+
+      .service-icon {
+        width: 100%;
+        height: 180px;
+        border: 1px solid var(--glass-border);
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        transition: all 0.4s;
+        position: relative;
+      }
+
+      .service-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition:
+          transform 0.6s ease,
+          filter 0.4s ease;
+        filter: brightness(0.85) saturate(0.9);
+      }
+
+      .service-icon::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          transparent 40%,
+          rgba(0, 0, 0, 0.7) 100%
+        );
+        pointer-events: none;
+        transition: opacity 0.4s;
+      }
+
+      .service-card:hover .service-icon {
+        border-color: var(--gold-light);
+      }
+
+      .service-card:hover .service-icon img {
+        transform: scale(1.08);
+        filter: brightness(1) saturate(1.1);
+      }
+
+      .service-card:hover .service-icon::after {
+        opacity: 0.6;
+      }
+
+      .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        color: var(--beige);
+        transition: color 0.3s;
+      }
+
+      .service-card:hover h3 {
+        color: var(--gold-light);
+      }
+
+      .service-card p {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+      }
+
+      .service-link {
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: gap 0.3s;
+      }
+
+      .service-link:hover {
+        gap: 0.9rem;
+      }
+
+      /* ─── WHY CHOOSE US ─── */
+      #why {
+        background: #000000;
+        text-align: center;
+      }
+
+      .why-header {
+        max-width: 600px;
+        margin: 0 auto 4rem;
+      }
+
+      .why-header .section-label {
+        justify-content: center;
+      }
+
+      .why-header .section-label::before {
+        display: none;
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      .why-card {
+        padding: 2.5rem 2rem;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        backdrop-filter: blur(10px);
+        transition: all 0.4s;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .why-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: var(--gold);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s;
+      }
+
+      .why-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .why-card:hover {
+        border-color: rgba(212, 175, 55, 0.4);
+        transform: translateY(-4px);
+      }
+
+      .why-icon {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+        display: block;
+        color: var(--gold);
+      }
+
+      .why-card h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.8rem;
+        color: var(--beige);
+      }
+
+      .why-card p {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+      }
+
+      /* ─── BEFORE AFTER ─── */
+      /* ─── BEFORE AFTER (Draggable Slider) ─── */
+      #results {
+        background: #000000;
+        overflow: hidden;
+      }
+
+      .results-header {
+        margin-bottom: 3.5rem;
+      }
+
+      .ba-slider-wrap {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .ba-track {
+        display: flex;
+        gap: 2rem;
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      .ba-card {
+        width: 420px;
+        max-width: 100%;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--glass-border);
+        transition: border-color 0.3s;
+      }
+
+      .ba-card:hover {
+        border-color: rgba(212, 175, 55, 0.4);
+      }
+
+      /* Comparison container */
+      .ba-comparison {
+        position: relative;
+        width: 100%;
+        height: 380px;
+        overflow: hidden;
+        cursor: col-resize;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .ba-comparison img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+      }
+
+      .ba-comparison .ba-img-after {
+        z-index: 1;
+      }
+
+      .ba-comparison .ba-img-before {
+        z-index: 2;
+        clip-path: inset(0 50% 0 0);
+      }
+
+      /* Drag handle line */
+      .ba-handle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 3px;
+        background: var(--gold);
+        z-index: 10;
+        transform: translateX(-50%);
+        pointer-events: none;
+        box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+      }
+
+      .ba-handle::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+        opacity: 0.4;
+      }
+
+      /* Drag handle circle */
+      .ba-handle-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 44px;
+        height: 44px;
+        background: var(--gold);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        box-shadow:
+          0 4px 20px rgba(212, 175, 55, 0.4),
+          0 0 0 4px rgba(0, 0, 0, 0.6);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .ba-comparison:active .ba-handle-circle {
+        transform: translate(-50%, -50%) scale(1.15);
+        box-shadow:
+          0 6px 30px rgba(212, 175, 55, 0.6),
+          0 0 0 6px rgba(0, 0, 0, 0.6);
+      }
+
+      .ba-handle-arrows {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--black);
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+
+      /* Labels on images */
+      .ba-label-before,
+      .ba-label-after {
+        position: absolute;
+        bottom: 1rem;
+        z-index: 5;
+        font-family: "Jost", sans-serif;
+        font-size: 0.62rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 0.3rem 0.9rem;
+        color: var(--gold);
+        backdrop-filter: blur(10px);
+        white-space: nowrap;
+        border: 1px solid rgba(212, 175, 55, 0.15);
+      }
+
+      .ba-label-before {
+        left: 1rem;
+        z-index: 5;
+      }
+
+      .ba-label-after {
+        right: 1rem;
+        z-index: 3;
+      }
+
+      .ba-info {
+        padding: 1.5rem;
+        background: transparent;
+        border-top: 1px solid var(--glass-border);
+      }
+
+      .ba-treatment {
+        font-size: 0.72rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 0.4rem;
+      }
+
+      .ba-desc {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+      }
+
+      .slider-nav {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        justify-content: center;
+      }
+
+      .slider-btn {
+        width: 48px;
+        height: 48px;
+        border: 1px solid var(--glass-border);
+        background: transparent;
+        color: var(--beige);
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slider-btn:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+        background: rgba(212, 175, 55, 0.05);
+      }
+
+      /* ─── TESTIMONIALS ─── */
+      #testimonials {
+        background: #000000;
+        position: relative;
+      }
+
+      #testimonials::before {
+        content: '"';
+        position: absolute;
+        top: 2rem;
+        left: 5%;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 15rem;
+        color: rgba(212, 175, 55, 0.04);
+        line-height: 1;
+        pointer-events: none;
+      }
+
+      .testi-slider-wrap {
+        position: relative;
+        overflow: hidden;
+        margin-top: 3.5rem;
+      }
+
+      .testi-track {
+        display: flex;
+        gap: 1.5rem;
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      .testi-card {
+        width: 320px;
+        max-width: 100%;
+        flex-shrink: 0;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        padding: 2.5rem;
+        position: relative;
+        transition: all 0.4s;
+        box-sizing: border-box;
+      }
+
+      .testi-card:hover {
+        border-color: rgba(212, 175, 55, 0.4);
+        transform: translateY(-3px);
+      }
+
+      .testi-stars {
+        display: flex;
+        gap: 0.3rem;
+        margin-bottom: 1.2rem;
+        color: var(--gold);
+        font-size: 0.85rem;
+      }
+
+      .testi-text {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.15rem;
+        line-height: 1.7;
+        color: var(--beige);
+        margin-bottom: 1.5rem;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .testi-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--glass-border);
+      }
+
+      .testi-avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.2rem;
+        color: var(--black);
+        font-weight: 600;
+      }
+
+      .testi-name {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--beige);
+        letter-spacing: 0.05em;
+      }
+
+      .testi-treatment {
+        font-size: 0.72rem;
+        color: var(--gold);
+        letter-spacing: 0.1em;
+      }
+
+      /* ─── BOOKING ─── */
+      #booking {
+        background: #000000;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #booking::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        pointer-events: none;
+      }
+
+      .booking-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        align-items: center;
+      }
+
+      .booking-info h2 {
+        margin-bottom: 1.2rem;
+      }
+
+      .booking-info p {
+        color: var(--text-muted);
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+      }
+
+      .booking-perks {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .booking-perk {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.82rem;
+        color: var(--text-muted);
+      }
+
+      .perk-icon {
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--glass-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+        color: var(--gold);
+      }
+
+      .booking-form {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        padding: 3rem;
+        backdrop-filter: blur(20px);
+        position: relative;
+      }
+
+      .booking-form::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--gold);
+      }
+
+      .form-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.6rem;
+        color: var(--beige);
+        margin-bottom: 0.5rem;
+      }
+
+      .form-sub {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        margin-bottom: 2rem;
+        letter-spacing: 0.05em;
+      }
+
+      .form-group {
+        margin-bottom: 1.2rem;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 0.68rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        background: rgba(212, 175, 55, 0.03);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        color: var(--beige);
+        padding: 0.85rem 1rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.85rem;
+        transition: border-color 0.3s;
+        outline: none;
+        appearance: none;
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: rgba(248, 245, 240, 0.25);
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        border-color: var(--gold);
+        background: rgba(212, 175, 55, 0.04);
+      }
+
+      .form-group select option {
+        background: #000000;
+        color: var(--beige);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 90px;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .btn-submit {
+        width: 100%;
+        background: var(--gold);
+        color: var(--black);
+        border: none;
+        padding: 1.1rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-top: 0.5rem;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+      }
+
+      .btn-submit:hover {
+        background: var(--gold-light);
+        transform: translateY(-1px);
+      }
+
+      .form-privacy {
+        text-align: center;
+        font-size: 0.68rem;
+        color: rgba(248, 245, 240, 0.3);
+        margin-top: 1rem;
+        letter-spacing: 0.05em;
+      }
+
+      /* ─── URGENCY BANNER ─── */
+      #urgency {
+        background: #000000;
+        border-top: 1px solid var(--glass-border);
+        border-bottom: 1px solid var(--glass-border);
+        padding: 2.5rem 5%;
+        text-align: center;
+      }
+
+      .urgency-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .urgency-icon {
+        font-size: 1.5rem;
+        color: var(--gold);
+      }
+
+      .urgency-text h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.8rem;
+        color: var(--gold);
+        font-weight: 500;
+      }
+
+      .urgency-text p {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        letter-spacing: 0.05em;
+        margin-top: 0.3rem;
+      }
+
+      .urgency-btn {
+        background: var(--gold);
+        color: var(--black);
+        padding: 0.9rem 2.2rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s;
+        white-space: nowrap;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+      }
+
+      .urgency-btn:hover {
+        background: var(--gold-light);
+        color: var(--black);
+      }
+
+      /* ─── FAQ ─── */
+      #faq {
+        background: #000000;
+      }
+
+      .faq-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+
+      .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .faq-item {
+        border-bottom: 1px solid var(--glass-border);
+        overflow: hidden;
+      }
+
+      .faq-q {
+        padding: 1.4rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--beige);
+        transition: color 0.3s;
+        letter-spacing: 0.02em;
+        line-height: 1.4;
+      }
+
+      .faq-q:hover {
+        color: var(--gold);
+      }
+
+      .faq-arrow {
+        font-size: 1rem;
+        transition: transform 0.3s;
+        flex-shrink: 0;
+        margin-left: 1rem;
+        color: var(--gold);
+      }
+
+      .faq-item.open .faq-arrow {
+        transform: rotate(45deg);
+      }
+
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.4s ease,
+          padding 0.4s;
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+      }
+
+      .faq-item.open .faq-a {
+        max-height: 200px;
+        padding-bottom: 1.2rem;
+      }
+
+      /* ─── INSTAGRAM ─── */
+      #instagram {
+        background: #000000;
+        text-align: center;
+      }
+
+      .ig-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 4px;
+        margin: 3rem 0;
+      }
+
+      .ig-item {
+        aspect-ratio: 1;
+        background: #000000;
+        border: 1px solid var(--glass-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.4s;
+      }
+
+      .ig-item:hover {
+        border-color: var(--gold);
+      }
+
+      .ig-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-family: "Jost", sans-serif;
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+        color: var(--gold);
+      }
+
+      .ig-item:hover .ig-overlay {
+        opacity: 1;
+      }
+
+      .ig-handle {
+        font-size: 0.72rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--gold);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: opacity 0.3s;
+      }
+
+      .ig-handle:hover {
+        opacity: 0.7;
+      }
+
+      /* ─── FOOTER ─── */
+      footer {
+        background: #000000;
+        border-top: 1px solid var(--glass-border);
+        padding: 4rem 5% 2rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 4rem;
+        margin-bottom: 3rem;
+      }
+
+      .footer-brand-name {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.8rem;
+        color: var(--gold);
+        letter-spacing: 0.08em;
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+
+      .footer-tagline {
+        font-size: 0.68rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 1.2rem;
+      }
+
+      .footer-about {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+
+      .footer-social {
+        display: flex;
+        gap: 0.8rem;
+      }
+
+      .social-link {
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--glass-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .social-link:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
+
+      .footer-col h4 {
+        font-family: "Jost", sans-serif;
+        font-size: 0.72rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+      }
+
+      .footer-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .footer-links a {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.3s;
+        letter-spacing: 0.03em;
+      }
+
+      .footer-links a:hover {
+        color: var(--gold);
+      }
+
+      .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .footer-contact a {
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-contact a:hover {
+        color: var(--gold);
+      }
+
+      .footer-contact-item {
+        display: flex;
+        gap: 0.8rem;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .footer-contact-icon {
+        color: var(--gold);
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid var(--glass-border);
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: gap;
+        gap: 1rem;
+      }
+
+      .footer-copy {
+        font-size: 0.72rem;
+        color: rgba(248, 245, 240, 0.2);
+        letter-spacing: 0.05em;
+      }
+
+      .footer-legal {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .footer-legal a {
+        font-size: 0.72rem;
+        color: rgba(248, 245, 240, 0.25);
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        transition: color 0.3s;
+      }
+
+      .footer-legal a:hover {
+        color: var(--gold);
+      }
+
+      /* ─── STICKY CTA ─── */
+      .sticky-cta {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: var(--gold);
+        color: var(--black);
+        padding: 0.9rem 2.5rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+        z-index: 900;
+        transition:
+          transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+          background 0.3s;
+        box-shadow: 0 10px 40px rgba(212, 175, 55, 0.25);
+        white-space: nowrap;
+        border: none;
+      }
+
+      .sticky-cta.visible {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .sticky-cta:hover {
+        background: var(--gold-light);
+        box-shadow: 0 12px 45px rgba(212, 175, 55, 0.35);
+      }
+
+      /* ─── WHATSAPP FLOAT ─── */
+      .wa-float {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 58px;
+        height: 58px;
+        background: var(--black);
+        border: 1px solid var(--gold);
+        color: var(--gold);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        text-decoration: none;
+        z-index: 900;
+        box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+        transition: all 0.3s ease;
+        animation: wa-bounce 3s ease infinite;
+      }
+
+      .wa-float:hover {
+        transform: scale(1.1);
+        border-color: var(--gold-light);
+        color: var(--gold-light);
+        box-shadow: 0 12px 40px rgba(212, 175, 55, 0.35);
+        animation: none;
+      }
+
+      @keyframes wa-bounce {
+        0%,
+        90%,
+        100% {
+          transform: translateY(0);
+        }
+
+        95% {
+          transform: translateY(-6px);
+        }
+      }
+
+      .wa-tooltip {
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid var(--glass-border);
+        color: var(--beige);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        padding: 0.4rem 0.9rem;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+        backdrop-filter: blur(10px);
+      }
+
+      .wa-float:hover .wa-tooltip {
+        opacity: 1;
+      }
+
+      /* ─── EXIT POPUP ─── */
+      .exit-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: 9998;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+        backdrop-filter: blur(8px);
+      }
+
+      .exit-overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .exit-popup {
+        background: #000000;
+        border: 1px solid var(--gold);
+        padding: 3.5rem;
+        max-width: 540px;
+        width: 90%;
+        position: relative;
+        text-align: center;
+      }
+
+      .exit-popup::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--gold);
+      }
+
+      .exit-close {
+        position: absolute;
+        top: 1rem;
+        right: 1.2rem;
+        background: none;
+        border: none;
+        color: var(--text-muted);
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: color 0.3s;
+        padding: 0.3rem;
+      }
+
+      .exit-close:hover {
+        color: var(--gold);
+      }
+
+      .exit-offer-tag {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--black);
+        font-size: 0.62rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        padding: 0.3rem 1rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+      }
+
+      .exit-popup h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .exit-popup p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin-bottom: 2rem;
+      }
+
+      .exit-input-wrap {
+        display: flex;
+        gap: 0;
+        margin-bottom: 1rem;
+      }
+
+      .exit-input {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--glass-border);
+        border-right: none;
+        color: var(--beige);
+        padding: 0.85rem 1rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.85rem;
+        outline: none;
+      }
+
+      .exit-input::placeholder {
+        color: rgba(248, 245, 240, 0.25);
+      }
+
+      .exit-btn {
+        background: var(--gold);
+        color: var(--black);
+        border: none;
+        padding: 0.85rem 1.5rem;
+        font-family: "Jost", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s;
+        white-space: nowrap;
+      }
+
+      .exit-btn:hover {
+        background: var(--gold-light);
+      }
+
+      .exit-skip {
+        font-size: 0.7rem;
+        color: rgba(248, 245, 240, 0.3);
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+      }
+
+      .exit-skip:hover {
+        color: var(--text-muted);
+      }
+
+      /* ─── ANIMATIONS ─── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .reveal-delay-1 {
+        transition-delay: 0.1s;
+      }
+
+      .reveal-delay-2 {
+        transition-delay: 0.2s;
+      }
+
+      .reveal-delay-3 {
+        transition-delay: 0.3s;
+      }
+
+      .reveal-delay-4 {
+        transition-delay: 0.4s;
+      }
+
+      /* ─── MOBILE ─── */
+      @media (max-width: 900px) {
+        nav {
+          justify-content: center;
+        }
+
+        .nav-logo {
+          align-items: center;
+          text-align: center;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .hero-image-container {
+          display: none;
+        }
+
+        .hero-deco-circle {
+          display: none;
+        }
+
+        .hero-content {
+          max-width: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero-trust,
+        .hero-ctas {
+          justify-content: center;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .booking-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .faq-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 2.5rem;
+        }
+
+        .ig-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid > *:first-child {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 600px) {
+        section {
+          padding: 4rem 5%;
+        }
+
+        .hero-ctas {
+          flex-direction: column;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+          justify-content: center;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .why-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .testi-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-stat-box {
+          right: 0;
+          bottom: -1rem;
+        }
+
+        .about-features {
+          grid-template-columns: 1fr;
+        }
+
+        .urgency-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .ig-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .ba-card,
+        .testi-card {
+          width: 280px;
+        }
+
+        .sticky-cta {
+          display: none;
+        }
+      }
+
+      /* ==========================================================================
+         ADDITIONAL STYLES FOR PREMIUM SECTIONS (BRANDS, CATEGORIES, RITUALS, WHY)
+         ========================================================================== */
+
+      /* ─── BRAND LOGOS ─── */
+      #brands {
+        background: #000000;
+        padding: 4rem 5%;
+        border-bottom: 1px solid var(--glass-border);
+      }
+
+      .brands-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .brands-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.8rem;
+        letter-spacing: 0.05em;
+        color: var(--beige);
+        margin-bottom: 3rem;
+        font-weight: 400;
+        position: relative;
+        display: inline-block;
+      }
+
+      .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 2rem 1.5rem;
+        align-items: center;
+        justify-items: center;
+      }
+
+      @media (max-width: 1024px) {
+        .brands-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2.5rem 1.5rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .brands-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem 1rem;
+        }
+      }
+
+      .brand-item {
+        width: 100%;
+        max-width: 160px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-muted);
+        transition: all 0.4s ease;
+        cursor: pointer;
+      }
+
+      .brand-item:hover {
+        color: var(--gold);
+        transform: scale(1.08);
+      }
+
+      .brand-svg {
+        width: 100%;
+        height: 100%;
+        max-height: 50px;
+      }
+
+      /* ─── CATEGORIES (WOMEN) ─── */
+      #categories {
+        background: #000000;
+        padding: 6rem 5%;
+      }
+
+      .category-header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+      }
+
+      .category-tag-box {
+        border: 1px solid var(--gold);
+        padding: 0.8rem 3rem;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.6rem;
+        letter-spacing: 0.2em;
+        color: var(--gold);
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 1024px) {
+        .categories-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .categories-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .category-card {
+        position: relative;
+        height: 380px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.25);
+        background-color: var(--black);
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        text-decoration: none;
+        display: block;
+      }
+
+      .category-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.9) 0%,
+          rgba(0, 0, 0, 0.3) 60%,
+          transparent 100%
+        );
+        z-index: 1;
+        transition: background 0.4s ease;
+      }
+
+      .category-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      .category-card:hover img {
+        transform: scale(1.08);
+      }
+
+      .category-card:hover {
+        border-color: var(--gold);
+        box-shadow: 0 12px 35px rgba(212, 175, 55, 0.2);
+      }
+
+      .category-card-content {
+        position: absolute;
+        inset: 0;
+        padding: 2rem 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+      }
+
+      .category-card-icon {
+        width: 42px;
+        height: 42px;
+        color: var(--beige);
+        opacity: 0.85;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+
+      .category-card-icon svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .category-card:hover .category-card-icon {
+        transform: translateY(-3px);
+        color: var(--gold-light);
+      }
+
+      .category-card-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--white);
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+      }
+
+      /* Specific Right Arrow for the Last Card */
+      .category-card-arrow {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--white);
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        opacity: 0.85;
+        transition: all 0.3s ease;
+      }
+
+      .category-card:hover .category-card-arrow {
+        background: var(--gold);
+        color: var(--black);
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      }
+
+      /* ─── SIGNATURE RITUALS ─── */
+      #signature-rituals {
+        background: #000000;
+        padding: 6rem 5%;
+        position: relative;
+        border-top: 1px solid var(--glass-border);
+      }
+
+      .rituals-header {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 4rem;
+      }
+
+      .rituals-header .section-label {
+        justify-content: center;
+      }
+
+      .rituals-header .section-label::before {
+        display: none;
+      }
+
+      .tab-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid var(--glass-border);
+        padding-bottom: 1rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 600px) {
+        .tab-container {
+          gap: 0.5rem;
+          flex-wrap: wrap;
+        }
+        .tab-btn {
+          font-size: 0.75rem !important;
+          padding: 0.5rem 0.6rem !important;
+        }
+      }
+
+      .tab-btn {
+        background: none;
+        border: none;
+        color: var(--text-muted);
+        font-family: "Jost", sans-serif;
+        font-size: 0.85rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 0.6rem 1.2rem;
+        position: relative;
+      }
+
+      .tab-btn:hover {
+        color: var(--beige);
+      }
+
+      .tab-btn.active {
+        color: var(--gold);
+        font-weight: 500;
+      }
+
+      .tab-btn.active::after {
+        content: "";
+        position: absolute;
+        bottom: -1.1rem;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--gold);
+        animation: tabFadeIn 0.3s ease forwards;
+      }
+
+      @keyframes tabFadeIn {
+        from { opacity: 0; transform: scaleX(0.7); }
+        to { opacity: 1; transform: scaleX(1); }
+      }
+
+      .rituals-grid-content {
+        display: none;
+        opacity: 0;
+      }
+
+      .rituals-grid-content.active {
+        display: block;
+        animation: fadeInTab 0.5s ease forwards;
+      }
+
+      @keyframes fadeInTab {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .rituals-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 1024px) {
+        .rituals-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.8rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .rituals-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .ritual-card-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        cursor: pointer;
+      }
+
+      .ritual-image {
+        aspect-ratio: 1;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        transition: border-color 0.4s, box-shadow 0.4s;
+      }
+
+      .ritual-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        filter: brightness(0.9);
+      }
+
+      .ritual-card-wrap:hover .ritual-image img {
+        transform: scale(1.08);
+        filter: brightness(1.05);
+      }
+
+      .ritual-card-wrap:hover .ritual-image {
+        border-color: var(--gold);
+        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+      }
+
+      .ritual-title {
+        font-family: "Jost", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--beige);
+        transition: color 0.3s;
+        text-align: center;
+        margin-top: 0.2rem;
+      }
+
+      .ritual-card-wrap:hover .ritual-title {
+        color: var(--gold);
+      }
+
+      /* ─── WHY CHOOSE US REDESIGNED ─── */
+      #why {
+        position: relative;
+        overflow: hidden;
+        background: #000000;
+      }
+
+      .why-watermark {
+        position: absolute;
+        width: min(350px, 35vw);
+        height: min(350px, 35vw);
+        color: var(--white);
+        opacity: 0.02;
+        pointer-events: none;
+        z-index: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      .why-watermark.left {
+        left: -5%;
+        bottom: 5%;
+        transform: rotate(-15deg);
+      }
+
+      .why-watermark.right {
+        right: -5%;
+        top: 5%;
+        transform: rotate(25deg);
+      }
+
+      .why-redesigned-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 2fr 1.1fr;
+        gap: 3rem;
+        align-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      .why-side-img {
+        width: 100%;
+        aspect-ratio: 3/4;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        transition: border-color 0.4s ease, transform 0.4s ease;
+      }
+
+      .why-side-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.9) brightness(0.9);
+        transition: transform 0.6s ease;
+      }
+
+      .why-side-img:hover {
+        border-color: var(--gold);
+        transform: translateY(-5px);
+      }
+
+      .why-side-img:hover img {
+        transform: scale(1.05);
+      }
+
+      .why-center-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.5rem 2.5rem;
+      }
+
+      .why-feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .why-feature-item:hover {
+        transform: translateY(-2px);
+      }
+
+      .why-feature-icon {
+        font-size: 2.2rem;
+        color: var(--gold);
+        margin-bottom: 1.2rem;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+
+      .why-feature-item:hover .why-feature-icon {
+        transform: scale(1.1) rotate(5deg);
+        color: var(--gold-light);
+      }
+
+      .why-feature-title {
+        font-family: "Jost", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--beige);
+        margin-bottom: 0.8rem;
+        letter-spacing: 0.01em;
+        line-height: 1.3;
+      }
+
+      .why-feature-text {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        line-height: 1.65;
+        font-weight: 300;
+      }
+
+      @media (max-width: 1024px) {
+        .why-redesigned-grid {
+          grid-template-columns: 1fr;
+          gap: 4rem;
+        }
+
+        .why-side-img {
+          display: none;
+        }
+
+        .why-center-content {
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem 2rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .why-center-content {
+          grid-template-columns: 1fr;
+          gap: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ── NAV ── -->
+    <nav id="mainNav">
+      <div class="nav-logo">
+        <span class="nav-logo-main">Aurah By Koyel</span>
+        <span class="nav-logo-sub">Where Beauty Meets Precision</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#booking" class="nav-cta">Book Now</a></li>
+      </ul>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-lines"></div>
+      <div class="hero-deco-circle"></div>
+
+      <div class="hero-image-container">
+        <img
+          src="assets/images/hero_1_1779125410709.png"
+          alt="Hero Image"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+          "
+        />
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Now Accepting New Clients
+        </div>
+        <p class="hero-tagline">Where Beauty Meets Precision</p>
+        <h1>
+          Advanced Skin &amp; Hair Treatments with <em>Visible Results</em>
+        </h1>
+        <p class="hero-sub">
+          Transform your confidence with expert-led skin &amp; hair solutions
+          tailored for real, lasting results — guided by science, delivered with
+          luxury.
+        </p>
+        <div class="hero-ctas">
+          <a href="#booking" class="btn-primary"
+            ><span
+              ><i class="fa-solid fa-wand-magic-sparkles"></i> Book
+              Appointment</span
+            ></a
+          >
+          <a
+            href="https://wa.me/919123093939"
+            class="btn-secondary"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i> WhatsApp Consultation</a
+          >
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-icon"><i class="fa-solid fa-check"></i></span>
+            Certified Experts
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="fa-solid fa-bolt"></i></span>
+            Advanced Treatments
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="fa-solid fa-diamond"></i></span>
+            Personalized Care
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BRAND LOGOS ── -->
+    <section id="brands" class="reveal">
+      <div class="brands-container">
+        <h3 class="brands-title">Premium Brands We Use</h3>
+        <div class="brands-grid">
+          <!-- Moroccanoil -->
+          <div class="brand-item" title="Moroccanoil">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <path d="M 62 8 L 70 8 L 75 24 L 80 8 L 88 8 L 88 42 L 82 42 L 82 20 L 76 35 L 74 35 L 68 20 L 68 42 L 62 42 Z" opacity="0.3"/>
+              <text x="75" y="29" font-family="'Jost', sans-serif" font-size="8" letter-spacing="4" text-anchor="middle" font-weight="700">MOROCCANOIL</text>
+            </svg>
+          </div>
+          <!-- Jeannot Ceuticals -->
+          <div class="brand-item" title="Jeannot Ceuticals">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <text x="75" y="22" font-family="'Cormorant Garamond', serif" font-size="18" letter-spacing="2" text-anchor="middle">JEANNOT</text>
+              <text x="75" y="34" font-family="'Jost', sans-serif" font-size="7" letter-spacing="4" text-anchor="middle">CEUTICALS</text>
+              <line x1="45" y1="40" x2="105" y2="40" stroke="currentColor" stroke-width="0.5"/>
+              <text x="75" y="46" font-family="'Jost', sans-serif" font-size="4" letter-spacing="1" text-anchor="middle">BARCELONA</text>
+            </svg>
+          </div>
+          <!-- L'Oréal Paris -->
+          <div class="brand-item" title="L'Oréal Paris">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <text x="75" y="26" font-family="'Jost', sans-serif" font-size="18" letter-spacing="3" text-anchor="middle" font-weight="300">L'ORÉAL</text>
+              <text x="75" y="42" font-family="'Jost', sans-serif" font-size="8" letter-spacing="5" text-anchor="middle" font-weight="400">PARIS</text>
+            </svg>
+          </div>
+          <!-- Schwarzkopf -->
+          <div class="brand-item" title="Schwarzkopf Professional">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <path d="M 25 32 C 25 24, 28 18, 33 18 C 35 15, 40 15, 42 17 C 44 12, 50 12, 53 15 C 58 15, 61 18, 61 22 C 61 25, 58 28, 58 32 C 58 35, 55 37, 50 37 C 48 37, 47 39, 47 41 L 33 41 C 33 38, 31 37, 29 37 C 26 37, 25 35, 25 32 Z" opacity="0.85"/>
+              <text x="68" y="26" font-family="'Cormorant Garamond', serif" font-size="15" font-weight="bold">Schwarzkopf</text>
+              <text x="68" y="38" font-family="'Jost', sans-serif" font-size="6" letter-spacing="3">PROFESSIONAL</text>
+            </svg>
+          </div>
+          <!-- Root Deep -->
+          <div class="brand-item" title="Root Deep">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <text x="75" y="20" font-family="'Jost', sans-serif" font-size="18" letter-spacing="1" text-anchor="middle" font-weight="700">Root</text>
+              <text x="75" y="38" font-family="'Jost', sans-serif" font-size="18" letter-spacing="1" text-anchor="middle" font-weight="400">Deep</text>
+            </svg>
+          </div>
+          <!-- Professional O3+ -->
+          <div class="brand-item" title="Professional O3+">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <text x="58" y="26" font-family="'Jost', sans-serif" font-size="8" letter-spacing="1" text-anchor="end">PR</text>
+              <text x="70" y="32" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="500" text-anchor="middle">O</text>
+              <text x="82" y="26" font-family="'Jost', sans-serif" font-size="8" letter-spacing="1" text-anchor="start">FESSIONAL</text>
+              <text x="84" y="44" font-family="'Jost', sans-serif" font-size="12" font-weight="500">3+</text>
+            </svg>
+          </div>
+          <!-- Cadiveu Professional -->
+          <div class="brand-item" title="Cadiveu Professional">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <text x="75" y="26" font-family="'Jost', sans-serif" font-size="18" letter-spacing="4" text-anchor="middle" font-weight="500">CADIVEU</text>
+              <text x="75" y="40" font-family="'Jost', sans-serif" font-size="7" letter-spacing="3" text-anchor="middle">PROFESSIONAL</text>
+            </svg>
+          </div>
+          <!-- MAC -->
+          <div class="brand-item" title="MAC Cosmetics">
+            <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
+              <text x="75" y="32" font-family="'Jost', sans-serif" font-size="24" letter-spacing="10" text-anchor="middle" font-weight="300">MAC</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <img
+              src="assets/images/afterbefor.jpeg"
+              alt="Clinic Interior"
+              style="width: 100%; height: 100%; object-fit: contain"
+            />
+          </div>
+          <div class="about-stat-box">
+            <div class="about-stat-item">
+              <span class="about-stat-num">2+</span>
+              <span class="about-stat-label">Years</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-num">300+</span>
+              <span class="about-stat-label">Patients</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-num">5</span>
+              <span class="about-stat-label">Specialists</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-num">4</span>
+              <span class="about-stat-label">Awards Won</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">
+            Precision-Crafted Beauty,
+            <em class="italic gold">Expertly Delivered</em>
+          </h2>
+          <p class="section-sub" style="margin-bottom: 1.5rem">
+            Aurah By Koyel was born from a singular vision — to bring
+            dermatologist-grade skin and hair care to those who demand nothing
+            short of excellence. We combine the latest in clinical technology
+            with a deeply personalized approach, ensuring every treatment is
+            tailored to your unique biology and aspirations.
+          </p>
+          <p
+            style="
+              font-size: 0.85rem;
+              color: var(--text-muted);
+              line-height: 1.8;
+              margin-bottom: 2rem;
+            "
+          >
+            From precision acne solutions to transformative anti-aging protocols
+            and advanced hair regrowth therapies, every procedure at Aurah is
+            performed in a sterile, luxurious environment by certified
+            specialists who are passionate about visible, lasting results.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <div class="about-feature-title">Latest Technology</div>
+              <div class="about-feature-text">
+                State-of-the-art clinical equipment for superior outcomes
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="about-feature-title">Highest Hygiene</div>
+              <div class="about-feature-text">
+                Hospital-grade sanitisation protocols every session
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="about-feature-title">Visible Results</div>
+              <div class="about-feature-text">
+                Measurable improvements you can see and feel
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="about-feature-title">Expert Care</div>
+              <div class="about-feature-text">
+                Certified specialists with years of clinical experience
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div
+      class="elfsight-app-92e60f4f-9cbf-4c6b-a5b2-1dd0dfabd3fb"
+      data-elfsight-app-lazy
+    ></div>
+    <!-- ── CATEGORIES ── -->
+    <section id="categories" class="reveal">
+      <div class="category-header">
+        <div class="category-tag-box">WOMEN</div>
+      </div>
+      <div class="categories-grid">
+        <!-- Card 1 -->
+        <a href="#booking" class="category-card">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&auto=format&fit=crop&q=80" alt="Hair Cut" />
+          <div class="category-card-content">
+            <div class="category-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="6" cy="6" r="3"/>
+                <circle cx="6" cy="18" r="3"/>
+                <line x1="9" y1="9" x2="20" y2="20"/>
+                <line x1="9" y1="15" x2="20" y2="4"/>
+              </svg>
+            </div>
+            <h3 class="category-card-title">Hair Cut</h3>
+          </div>
+        </a>
+        <!-- Card 2 -->
+        <a href="#booking" class="category-card">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80" alt="Hair Spa & Treatment" />
+          <div class="category-card-content">
+            <div class="category-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2v6M12 8c-3.3 0-6 2.7-6 6v4h12v-4c0-3.3-2.7-6-6-6z"/>
+                <path d="M12 8c1.5 0 3 .5 3 2s-1.5 2-3 2-3-.5-3-2 1.5-2 3-2z"/>
+                <circle cx="12" cy="15" r="1"/>
+              </svg>
+            </div>
+            <h3 class="category-card-title">Hair Spa &amp; Treatment</h3>
+          </div>
+        </a>
+        <!-- Card 3 -->
+        <a href="#booking" class="category-card">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&auto=format&fit=crop&q=80" alt="Makeup" />
+          <div class="category-card-content">
+            <div class="category-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/>
+                <path d="M12 7c-1.5 0-3 1.5-3 3.5S10.5 14 12 14s3-1.5 3-3.5S13.5 7 12 7z"/>
+                <path d="M8 17s2-1.5 4-1.5 4 1.5 4 1.5"/>
+              </svg>
+            </div>
+            <h3 class="category-card-title">Makeup</h3>
+          </div>
+        </a>
+        <!-- Card 4 -->
+        <a href="#booking" class="category-card">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&auto=format&fit=crop&q=80" alt="Skin" />
+          <div class="category-card-content">
+            <div class="category-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 14c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-3.3 4-8 4-8s4 4.7 4 8z"/>
+                <path d="M12 2v2M12 20v2M4 12H2M22 12h-2"/>
+              </svg>
+            </div>
+            <div class="category-card-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <h3 class="category-card-title">Skin</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section id="services">
+      <div class="services-header reveal">
+        <div class="section-label">Our Treatments</div>
+        <h2 class="section-title">
+          Advanced Solutions for
+          <em class="italic gold">Every Skin &amp; Hair Concern</em>
+        </h2>
+        <p class="section-sub">
+          Clinically proven treatments, personalised to your unique needs.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&h=300&fit=crop&q=80"
+              alt="Acne & Pimple Treatment"
+              loading="lazy"
+            />
+          </div>
+          <h3>Acne &amp; Pimple Treatment</h3>
+          <p>
+            Advanced multi-step protocols that target acne at its root —
+            reducing breakouts, clearing active blemishes, and preventing future
+            recurrence for lasting clarity.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=300&fit=crop&q=80"
+              alt="Eyebrow Treatment"
+              loading="lazy"
+            />
+          </div>
+          <h3>Eyebrow Treatment</h3>
+          <p>
+            Precision eyebrow shaping, microblading, and tinting services to
+            enhance your natural arch and frame your face perfectly.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&q=80"
+              alt="Pigmentation Treatment"
+              loading="lazy"
+            />
+          </div>
+          <h3>Pigmentation Treatment</h3>
+          <p>
+            Precision laser and chemical peel therapies to fade dark spots,
+            melasma, and uneven tone — revealing a luminous, even complexion
+            that radiates confidence.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=300&fit=crop&q=80&crop=top"
+              alt="Hair Fall Control"
+              loading="lazy"
+            />
+          </div>
+          <h3>Hair Fall Control</h3>
+          <p>
+            Comprehensive trichological assessment followed by targeted PRP,
+            mesotherapy, and medical-grade topical regimens to halt shedding and
+            strengthen every strand.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&h=300&fit=crop&q=80"
+              alt="Hair Regrowth Therapy"
+              loading="lazy"
+            />
+          </div>
+          <h3>Hair Regrowth Therapy</h3>
+          <p>
+            Stimulate dormant follicles with advanced PRP, low-level laser
+            therapy, and personalised growth factor cocktails for visibly
+            denser, healthier hair growth.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop&q=80"
+              alt="Scalp Treatment"
+              loading="lazy"
+            />
+          </div>
+          <h3>Scalp Treatment</h3>
+          <p>
+            Targeted treatments for dandruff, seborrheic dermatitis, scalp
+            psoriasis, and sensitivity — restoring a healthy scalp ecosystem for
+            optimal hair health.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <img
+              src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&h=300&fit=crop&q=80"
+              alt="Hydrafacial & Glow Facial"
+              loading="lazy"
+            />
+          </div>
+          <h3>Hydrafacial &amp; Glow Facial</h3>
+          <p>
+            The ultimate luxury skin reset — deep cleansing, gentle exfoliation,
+            and intensive hydration combined in one transformative session for
+            an instant, lit-from-within glow.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <img
+              src="assets/images/Laser-Hair-Growth.jpg"
+              alt="Laser Hair Reduction"
+              loading="lazy"
+            />
+          </div>
+          <h3>Laser Hair Reduction</h3>
+          <p>
+            Precision diode laser technology for permanent, pain-minimal hair
+            reduction on face, body, and sensitive areas — smooth skin that
+            lasts a lifetime.
+          </p>
+          <a href="#booking" class="service-link">Explore Treatment →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SIGNATURE RITUALS ── -->
+    <section id="signature-rituals" class="reveal">
+      <div class="rituals-header">
+        <div class="section-label">Signature Rituals</div>
+        <h2 class="section-title">Bespoke <em class="italic gold">Salon Experiences</em></h2>
+        <p class="section-sub">Indulge in our curated rituals designed for ultimate restoration and luxury.</p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="tab-container">
+        <button class="tab-btn active" data-tab="hair-tab" onclick="switchTab('hair-tab')">Women's Hairs</button>
+        <button class="tab-btn" data-tab="body-tab" onclick="switchTab('body-tab')">Women's Body Care</button>
+        <button class="tab-btn" data-tab="face-tab" onclick="switchTab('face-tab')">Women's Face Care</button>
+      </div>
+
+      <!-- Tab Content: Hair -->
+      <div id="hair-tab" class="rituals-grid-content active">
+        <div class="rituals-grid">
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=500&auto=format&fit=crop&q=80" alt="K-Ssense Head Rituals" />
+            </div>
+            <h4 class="ritual-title">K-Ssense Head Rituals</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&auto=format&fit=crop&q=80" alt="Glass Shine Wax" />
+            </div>
+            <h4 class="ritual-title">Glass Shine Wax</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80" alt="Capillary Hair Spa" />
+            </div>
+            <h4 class="ritual-title">Capillary Hair Spa</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&auto=format&fit=crop&q=80" alt="Advanced Keratin Gloss" />
+            </div>
+            <h4 class="ritual-title">Advanced Keratin Gloss</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Body -->
+      <div id="body-tab" class="rituals-grid-content">
+        <div class="rituals-grid">
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&auto=format&fit=crop&q=80" alt="Coconut Body Polish" />
+            </div>
+            <h4 class="ritual-title">Coconut Body Polish</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500&auto=format&fit=crop&q=80" alt="Sleek Smooth Silk Wax" />
+            </div>
+            <h4 class="ritual-title">Sleek Smooth Silk Wax</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=500&auto=format&fit=crop&q=80" alt="Gold Radiance Exfoliation" />
+            </div>
+            <h4 class="ritual-title">Gold Radiance Exfoliation</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=500&auto=format&fit=crop&q=80" alt="Detoxifying Massage Therapy" />
+            </div>
+            <h4 class="ritual-title">Detoxifying Massage Therapy</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Face -->
+      <div id="face-tab" class="rituals-grid-content">
+        <div class="rituals-grid">
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&auto=format&fit=crop&q=80" alt="K-Ssense Face Rituals" />
+            </div>
+            <h4 class="ritual-title">K-Ssense Face Rituals</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&auto=format&fit=crop&q=80" alt="Hydra Radiance Facial" />
+            </div>
+            <h4 class="ritual-title">Hydra Radiance Facial</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&auto=format&fit=crop&q=80" alt="Luminous Glow Infusion" />
+            </div>
+            <h4 class="ritual-title">Luminous Glow Infusion</h4>
+          </div>
+          <div class="ritual-card-wrap">
+            <div class="ritual-image">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80" alt="Deep Pore Collagen Facial" />
+            </div>
+            <h4 class="ritual-title">Deep Pore Collagen Facial</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY CHOOSE US (Redesigned) ── -->
+    <section id="why">
+      <!-- Watermark Background SVGs -->
+      <div class="why-watermark left">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+          <circle cx="35" cy="50" r="15"/>
+          <circle cx="35" cy="70" r="15"/>
+          <line x1="45" y1="55" x2="85" y2="85"/>
+          <line x1="45" y1="65" x2="85" y2="35"/>
+        </svg>
+      </div>
+      <div class="why-watermark right">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+          <path d="M20,20 L80,20 M20,30 L80,30 M20,40 L80,40 M20,50 L80,50 M20,60 L80,60 M20,70 L80,70 M20,80 L80,80 M20,90 L80,90"/>
+          <line x1="50" y1="10" x2="50" y2="90" stroke-width="4"/>
+        </svg>
+      </div>
+
+      <div class="why-header reveal">
+        <div class="section-label">Why Aurah</div>
+        <h2 class="section-title">The <em class="italic gold">Aurah</em> Difference</h2>
+        <p class="section-sub">Excellence is not a service, it's our standard. Here is what sets us apart.</p>
+      </div>
+
+      <div class="why-redesigned-grid reveal">
+        <!-- Left Column: Stylist Image -->
+        <div class="why-side-img reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?w=500&auto=format&fit=crop&q=80" alt="Expert Hair Stylist at Work" />
+        </div>
+
+        <!-- Center Column: 4 Features -->
+        <div class="why-center-content">
+          <div class="why-feature-item reveal">
+            <div class="why-feature-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="why-feature-title">20+ Years of Experience</h3>
+            <p class="why-feature-text">
+              Serving Generations with Style. Trusted by thousands across all age groups for consistent salon excellence.
+            </p>
+          </div>
+
+          <div class="why-feature-item reveal reveal-delay-1">
+            <div class="why-feature-icon">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <h3 class="why-feature-title">Expert Stylists, Certified Professionals</h3>
+            <p class="why-feature-text">
+              Your Hair in Skilled Hands. Each stylist is trained, certified, and experienced in modern trends &amp; classic cuts.
+            </p>
+          </div>
+
+          <div class="why-feature-item reveal">
+            <div class="why-feature-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="why-feature-title">4.8★ Rated by Happy Clients</h3>
+            <p class="why-feature-text">
+              Rated High Across Platforms. Hundreds of 5-star reviews speak for our consistent quality and care.
+            </p>
+          </div>
+
+          <div class="why-feature-item reveal reveal-delay-1">
+            <div class="why-feature-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="why-feature-title">Hygiene First, Always</h3>
+            <p class="why-feature-text">
+              Sanitized Tools &amp; Clean Environment. We follow strict hygiene protocols to ensure your safety and comfort.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: Model Image -->
+        <div class="why-side-img reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=80" alt="Beautiful Client with Premium Hair Styling" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BEFORE/AFTER ── -->
+    <section id="results">
+      <div class="results-header reveal">
+        <div class="section-label">Transformations</div>
+        <h2 class="section-title">
+          Real Results, <em class="italic gold">Real Confidence</em>
+        </h2>
+        <p class="section-sub" style="max-width: 500px">
+          Witness the transformative power of precision treatment. These are
+          real outcomes from our valued clients.
+        </p>
+      </div>
+      <div class="ba-slider-wrap reveal">
+        <div class="ba-track" id="baTrack">
+          <!-- Card 1: Acne Treatment -->
+          <div class="ba-card">
+            <div class="ba-comparison" data-ba-slider>
+              <img
+                class="ba-img-after"
+                src="assets/images/skinafter.jpeg"
+                alt="After Acne Treatment"
+              />
+              <img
+                class="ba-img-before"
+                src="assets/images/skinbefore.jpeg"
+                alt="Before Acne Treatment"
+              />
+              <div class="ba-handle">
+                <div class="ba-handle-circle">
+                  <span class="ba-handle-arrows">◄ ►</span>
+                </div>
+              </div>
+              <div class="ba-label-before">Before</div>
+              <div class="ba-label-after">After</div>
+            </div>
+            <div class="ba-info">
+              <div class="ba-treatment">Acne Treatment</div>
+              <div class="ba-desc">
+                Complete clearance after 4 sessions of precision acne protocol
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Pigmentation Treatment -->
+          <div class="ba-card">
+            <div class="ba-comparison" data-ba-slider>
+              <img
+                class="ba-img-after"
+                src="assets/images/skinafter2.png"
+                alt="After Pigmentation Treatment"
+              />
+              <img
+                class="ba-img-before"
+                src="assets/images/skinbefore2.jpeg "
+                alt="Before Pigmentation Treatment"
+              />
+              <div class="ba-handle">
+                <div class="ba-handle-circle">
+                  <span class="ba-handle-arrows">◄ ►</span>
+                </div>
+              </div>
+              <div class="ba-label-before">Before</div>
+              <div class="ba-label-after">After</div>
+            </div>
+            <div class="ba-info">
+              <div class="ba-treatment">Pigmentation Treatment</div>
+              <div class="ba-desc">
+                Visible fade of dark spots and melasma in 6 laser sessions
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Hair Regrowth -->
+          <div class="ba-card">
+            <div class="ba-comparison" data-ba-slider>
+              <img
+                class="ba-img-after"
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&h=500&fit=crop&q=80"
+                alt="After Hair Regrowth"
+              />
+              <img
+                class="ba-img-before"
+                src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=500&h=500&fit=crop&q=80"
+                alt="Before Hair Regrowth"
+              />
+              <div class="ba-handle">
+                <div class="ba-handle-circle">
+                  <span class="ba-handle-arrows">◄ ►</span>
+                </div>
+              </div>
+              <div class="ba-label-before">Before</div>
+              <div class="ba-label-after">After</div>
+            </div>
+            <div class="ba-info">
+              <div class="ba-treatment">Hair Regrowth Therapy</div>
+              <div class="ba-desc">
+                Significant density increase with PRP + Mesotherapy protocol
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn" id="baPrev">←</button>
+          <button class="slider-btn" id="baNext">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ── -->
+    <section id="testimonials">
+      <div class="reveal">
+        <div class="section-label">Client Stories</div>
+        <h2 class="section-title">
+          Trusted by <em class="italic gold">Hundreds of Clients</em>
+        </h2>
+      </div>
+      <div class="testi-slider-wrap">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "Aurah By Koyel transformed my skin completely. After years of
+              struggling with acne, just four sessions cleared what no other
+              clinic could. The precision and care here is truly unmatched."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">P</div>
+              <div>
+                <div class="testi-name">Priya Sharma</div>
+                <div class="testi-treatment">Acne & Skin Clarity Treatment</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal reveal-delay-1">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "The hair regrowth therapy gave me results I never thought
+              possible. My confidence is completely restored. The team is
+              knowledgeable, caring, and the ambience feels like a five-star
+              spa."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">R</div>
+              <div>
+                <div class="testi-name">Rahul Mehta</div>
+                <div class="testi-treatment">PRP Hair Regrowth Therapy</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal reveal-delay-2">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "I was skeptical about pigmentation treatments after so many
+              failed attempts elsewhere. Aurah's laser protocol faded my melasma
+              significantly in just six sessions. Absolutely life-changing."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">A</div>
+              <div>
+                <div class="testi-name">Anjali Verma</div>
+                <div class="testi-treatment">
+                  Pigmentation & Laser Treatment
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "The HydraFacial here is on another level entirely. My skin looked
+              glowing and felt deeply nourished immediately after. I won't trust
+              my skin to anyone else now. Aurah is exceptional."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">N</div>
+              <div>
+                <div class="testi-name">Neha Kapoor</div>
+                <div class="testi-treatment">HydraFacial Glow Treatment</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal reveal-delay-1">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "At 42, I started anti-aging treatments at Aurah and the results
+              are genuinely remarkable. My skin looks firmer and more youthful
+              than it did five years ago. The expertise here is world-class."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">S</div>
+              <div>
+                <div class="testi-name">Sunita Patel</div>
+                <div class="testi-treatment">Anti-Aging Protocol</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal reveal-delay-2">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "Laser hair reduction at Aurah was the best investment I've made
+              in my appearance. Professional, painless, and permanent results.
+              The whole experience felt premium from start to finish."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">K</div>
+              <div>
+                <div class="testi-name">Kavita Singh</div>
+                <div class="testi-treatment">Laser Hair Reduction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn" id="testiPrev">←</button>
+          <button class="slider-btn" id="testiNext">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BOOKING ── -->
+    <section id="booking">
+      <div class="booking-grid">
+        <div class="booking-info reveal">
+          <div class="section-label">Free Consultation</div>
+          <h2 class="section-title">
+            Begin Your <em class="italic gold">Transformation</em> Today
+          </h2>
+          <p>
+            Take the first step toward the skin and hair you deserve. Book your
+            complimentary consultation and let our expert team craft a
+            personalised treatment plan just for you.
+          </p>
+          <div class="booking-perks">
+            <div class="booking-perk">
+              <span class="perk-icon"><i class="fa-solid fa-check"></i></span>
+              <span>Free in-depth skin & hair analysis</span>
+            </div>
+            <div class="booking-perk">
+              <span class="perk-icon"><i class="fa-solid fa-check"></i></span>
+              <span>Personalised treatment recommendation</span>
+            </div>
+            <div class="booking-perk">
+              <span class="perk-icon"><i class="fa-solid fa-check"></i></span>
+              <span>No obligation – just expert guidance</span>
+            </div>
+            <div class="booking-perk">
+              <span class="perk-icon"><i class="fa-solid fa-check"></i></span>
+              <span>Certified specialist consultation</span>
+            </div>
+            <div class="booking-perk">
+              <span class="perk-icon"><i class="fa-solid fa-check"></i></span>
+              <span>Transparent pricing with no hidden costs</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="booking-form">
+            <h3 class="form-title">Claim Free Consultation</h3>
+            <p class="form-sub">Limited spots available — book today</p>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label>Preferred Treatment</label>
+              <select>
+                <option value="">Select a treatment...</option>
+                <option>Acne & Pimple Treatment</option>
+                <option>Pigmentation Treatment</option>
+                <option>Anti-Aging Solutions</option>
+                <option>Hair Fall Control</option>
+                <option>Hair Regrowth Therapy</option>
+                <option>Scalp Treatment</option>
+                <option>HydraFacial / Glow Facial</option>
+                <option>Laser Hair Reduction</option>
+                <option>General Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message (Optional)</label>
+              <textarea
+                placeholder="Tell us about your skin or hair concerns..."
+              ></textarea>
+            </div>
+            <button class="btn-submit" onclick="handleBooking(this)">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Claim Free
+              Consultation
+            </button>
+            <p class="form-privacy">
+              🔒 Your data is 100% secure & never shared with third parties.<br />
+              By submitting, you agree to our
+              <a
+                href="#footer"
+                style="color: var(--gold); text-decoration: none"
+                >Privacy Policy</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── URGENCY ── -->
+    <div id="urgency">
+      <div class="urgency-inner">
+        <div class="urgency-icon">
+          <i class="fa-solid fa-hourglass-half"></i>
+        </div>
+        <div class="urgency-text">
+          <h3>Limited Time Offer — Book Today & Get FREE Skin Analysis</h3>
+          <p>
+            Complimentary skin analysis worth ₹1,500 included with your first
+            consultation. Limited slots available this month.
+          </p>
+        </div>
+        <a href="#booking" class="urgency-btn">Claim Now →</a>
+      </div>
+    </div>
+
+    <!-- ── FAQ ── -->
+    <section id="faq">
+      <div class="faq-grid">
+        <div class="reveal">
+          <div class="section-label">FAQ</div>
+          <h2 class="section-title">
+            Frequently Asked <em class="italic gold">Questions</em>
+          </h2>
+          <p class="section-sub">
+            Everything you need to know before your visit to Aurah By Koyel.
+          </p>
+        </div>
+        <div class="faq-list reveal reveal-delay-1">
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              How many sessions are required for visible results?
+              <span class="faq-arrow">+</span>
+            </div>
+            <div class="faq-a">
+              The number of sessions varies depending on your skin type,
+              concern, and treatment chosen. Most clients begin seeing visible
+              improvement after 2–3 sessions. Our specialist will provide a
+              personalised session plan during your consultation, giving you a
+              clear roadmap to your goals.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Is the initial consultation really free?
+              <span class="faq-arrow">+</span>
+            </div>
+            <div class="faq-a">
+              Absolutely. Your first consultation at Aurah By Koyel is
+              completely complimentary and includes a detailed skin or hair
+              analysis. There is no obligation to book any treatment. We believe
+              informed decisions lead to the best outcomes.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Are the treatments safe for all skin types?
+              <span class="faq-arrow">+</span>
+            </div>
+            <div class="faq-a">
+              Yes. All our treatments are clinically validated and performed by
+              certified specialists. We conduct thorough skin assessments before
+              any procedure to ensure each treatment is safe and appropriate for
+              your specific skin type and concern.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              How soon will I see results from skin treatments?
+              <span class="faq-arrow">+</span>
+            </div>
+            <div class="faq-a">
+              Many clients notice improvements after their very first session —
+              particularly with HydraFacial and glow treatments. For deeper
+              concerns like acne, pigmentation, or hair loss, significant
+              results typically appear within 3–6 sessions, with continued
+              improvement over time.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Is laser hair reduction permanent?
+              <span class="faq-arrow">+</span>
+            </div>
+            <div class="faq-a">
+              Laser hair reduction offers long-lasting to permanent results for
+              most clients. After a recommended course of 6–8 sessions, the
+              majority of hair follicles are permanently disabled. Any minimal
+              regrowth tends to be finer and lighter than before.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              What should I do to prepare for my appointment?
+              <span class="faq-arrow">+</span>
+            </div>
+            <div class="faq-a">
+              We recommend arriving with a clean, makeup-free face or scalp.
+              Avoid sun exposure 48 hours prior for laser treatments. During
+              your consultation, our specialists will provide specific
+              pre-treatment guidelines tailored to your chosen procedure.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer id="footer">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand-name">Aurah By Koyel</span>
+          <p class="footer-tagline">Where Beauty Meets Precision</p>
+          <p class="footer-about">
+            Premium skin and hair clinic offering expert-led, science-backed
+            treatments for real, lasting results. Your confidence is our
+            commitment.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://instagram.com/aurahbykoyel2026"
+              target="_blank"
+              class="social-link"
+              title="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/919123093939"
+              target="_blank"
+              class="social-link"
+              title="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="social-link" title="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link" title="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="#booking">Acne Treatment</a></li>
+            <li><a href="#booking">Pigmentation</a></li>
+            <li><a href="#booking">Anti-Aging</a></li>
+            <li><a href="#booking">Hair Regrowth</a></li>
+            <li><a href="#booking">HydraFacial</a></li>
+            <li><a href="#booking">Laser Reduction</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Aurah</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#results">Before & After</a></li>
+            <li><a href="#testimonials">Client Reviews</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#booking">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"
+                ><i class="fa-solid fa-phone"></i
+              ></span>
+              <a href="tel:+919123093939">+91 91230 93939</a>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></span>
+              <a href="https://wa.me/919123093939" target="_blank"
+                >WhatsApp Consultation</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+              <a href="mailto:aurahbykoyel@gmail.com">aurahbykoyel@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              <a
+                href="https://www.google.com/maps/dir//Aurah+by+Koyel,+Bazar,+near+Duke+School,+Dakshin+Jhapardah,+Domjur,+Howrah,+Jhapardah,+West+Bengal+711405/@22.5286023,88.3723013,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39f8816d06e96de3:0x23b69f3321b6867f!2m2!1d88.2183706!2d22.6336561!5m1!1e1?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                >Aurah by Koyel, Bazar, near Duke School, Dakshin Jhapardah,
+                Domjur, Howrah, Jhapardah, West Bengal 711405</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"
+                ><i class="fa-solid fa-clock"></i
+              ></span>
+              <span>Mon–Sat: 10am – 7pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2026 Aurah By Koyel. All rights reserved. Precision in every
+          treatment.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="cookie.html">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ── STICKY CTA ── -->
+    <a href="#booking" class="sticky-cta" id="stickyCta"
+      ><i class="fa-solid fa-wand-magic-sparkles"></i> Book Free Consultation</a
+    >
+
+    <!-- ── WHATSAPP FLOAT ── -->
+    <a href="https://wa.me/919123093939" class="wa-float" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- ── EXIT POPUP ── -->
+    <div class="exit-overlay" id="exitOverlay">
+      <div class="exit-popup">
+        <button class="exit-close" onclick="closeExit()">✕</button>
+        <div class="exit-offer-tag">Exclusive Offer</div>
+        <h2>Wait — Don't Leave <em class="italic gold">Empty-Handed!</em></h2>
+        <p>
+          Book your free consultation today and receive a complimentary advanced
+          skin analysis worth ₹1,500 — absolutely free. Limited slots available
+          this week.
+        </p>
+        <div class="exit-input-wrap">
+          <input
+            type="tel"
+            class="exit-input"
+            placeholder="Enter your phone number"
+          />
+          <button class="exit-btn" onclick="closeExit()">Claim Now</button>
+        </div>
+        <p class="exit-skip" onclick="closeExit()">
+          No thanks, I'll pass on the free offer
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // ── NAV scroll ──
+      const nav = document.getElementById("mainNav");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", window.scrollY > 80);
+      });
+
+      // ── Sticky CTA ──
+      const stickyCta = document.getElementById("stickyCta");
+      const bookingSection = document.getElementById("booking");
+      let ctaTimeout;
+      window.addEventListener("scroll", () => {
+        clearTimeout(ctaTimeout);
+        const bookingRect = bookingSection.getBoundingClientRect();
+        const isBookingVisible =
+          bookingRect.top < window.innerHeight && bookingRect.bottom >= 0;
+
+        if (window.scrollY > 400 && !isBookingVisible) {
+          ctaTimeout = setTimeout(
+            () => stickyCta.classList.add("visible"),
+            200,
+          );
+        } else {
+          stickyCta.classList.remove("visible");
+        }
+      });
+
+      // ── Reveal on scroll ──
+      const revealEls = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      revealEls.forEach((el) => observer.observe(el));
+
+      // ── FAQ toggle ──
+      function toggleFaq(el) {
+        const item = el.closest(".faq-item");
+        const isOpen = item.classList.contains("open");
+        document
+          .querySelectorAll(".faq-item.open")
+          .forEach((i) => i.classList.remove("open"));
+        if (!isOpen) item.classList.add("open");
+      }
+
+      // ── Before/After Draggable Comparison Slider ──
+      const baSliders = document.querySelectorAll("[data-ba-slider]");
+
+      baSliders.forEach((slider) => {
+        const beforeImg = slider.querySelector(".ba-img-before");
+        const handle = slider.querySelector(".ba-handle");
+        let isDragging = false;
+
+        function updateSlider(x) {
+          const rect = slider.getBoundingClientRect();
+          let pos = ((x - rect.left) / rect.width) * 100;
+          pos = Math.max(2, Math.min(98, pos));
+          beforeImg.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
+          handle.style.left = pos + "%";
+        }
+
+        // Mouse events
+        slider.addEventListener("mousedown", (e) => {
+          isDragging = true;
+          updateSlider(e.clientX);
+          e.preventDefault();
+        });
+
+        document.addEventListener("mousemove", (e) => {
+          if (!isDragging) return;
+          updateSlider(e.clientX);
+        });
+
+        document.addEventListener("mouseup", () => {
+          isDragging = false;
+        });
+
+        // Touch events
+        slider.addEventListener(
+          "touchstart",
+          (e) => {
+            isDragging = true;
+            updateSlider(e.touches[0].clientX);
+          },
+          { passive: true },
+        );
+
+        slider.addEventListener(
+          "touchmove",
+          (e) => {
+            if (!isDragging) return;
+            updateSlider(e.touches[0].clientX);
+            e.preventDefault();
+          },
+          { passive: false },
+        );
+
+        slider.addEventListener("touchend", () => {
+          isDragging = false;
+        });
+      });
+
+      // ── Before/After Carousel Navigation ──
+      let baIndex = 0;
+      const baTrack = document.getElementById("baTrack");
+      const baCards = baTrack.querySelectorAll(".ba-card");
+
+      document.getElementById("baNext").addEventListener("click", () => {
+        const cardWidth = baCards[0].offsetWidth + 32;
+        const maxIndex =
+          baCards.length -
+          Math.floor(baTrack.parentElement.offsetWidth / cardWidth);
+        baIndex = Math.min(baIndex + 1, Math.max(0, maxIndex));
+        baTrack.style.transform = `translateX(-${baIndex * cardWidth}px)`;
+      });
+
+      document.getElementById("baPrev").addEventListener("click", () => {
+        const cardWidth = baCards[0].offsetWidth + 32;
+        baIndex = Math.max(baIndex - 1, 0);
+        baTrack.style.transform = `translateX(-${baIndex * cardWidth}px)`;
+      });
+
+      // ── Testimonials Slider ──
+      let testiIndex = 0;
+      const testiTrack = document.getElementById("testiTrack");
+      const testiCards = testiTrack.querySelectorAll(".testi-card");
+
+      document.getElementById("testiNext").addEventListener("click", () => {
+        const testiCardWidth = testiCards[0].offsetWidth + 24; // card width + gap
+        const maxIndex = Math.max(
+          0,
+          testiCards.length -
+            Math.floor(testiTrack.parentElement.offsetWidth / testiCardWidth),
+        );
+        testiIndex = Math.min(testiIndex + 1, maxIndex);
+        testiTrack.style.transform = `translateX(-${testiIndex * testiCardWidth}px)`;
+      });
+
+      document.getElementById("testiPrev").addEventListener("click", () => {
+        const testiCardWidth = testiCards[0].offsetWidth + 24; // card width + gap
+        testiIndex = Math.max(testiIndex - 1, 0);
+        testiTrack.style.transform = `translateX(-${testiIndex * testiCardWidth}px)`;
+      });
+
+      // ── Exit intent popup ──
+      let exitShown = false;
+      document.addEventListener("mouseleave", (e) => {
+        if (e.clientY < 0 && !exitShown) {
+          exitShown = true;
+          setTimeout(() => {
+            document.getElementById("exitOverlay").classList.add("active");
+          }, 300);
+        }
+      });
+
+      function closeExit() {
+        document.getElementById("exitOverlay").classList.remove("active");
+      }
+
+      document.getElementById("exitOverlay").addEventListener("click", (e) => {
+        if (e.target === document.getElementById("exitOverlay")) closeExit();
+      });
+
+      // ── Booking form ──
+      function handleBooking(btn) {
+        const form = btn.closest(".booking-form");
+        const name = form.querySelector('input[type="text"]').value;
+        const phone = form.querySelector('input[type="tel"]').value;
+        if (!name || !phone) {
+          btn.innerHTML = "⚠ Please fill in your name & phone";
+          btn.style.background = "#8B7355";
+          setTimeout(() => {
+            btn.innerHTML =
+              '<i class="fa-solid fa-wand-magic-sparkles"></i> Claim Free Consultation';
+            btn.style.background = "";
+          }, 2500);
+          return;
+        }
+        btn.innerHTML = "✓ Request Submitted — We'll Call You Shortly!";
+        btn.style.background = "#2d6a3f";
+        btn.disabled = true;
+      }
+
+      // ── Smooth hero entrance ──
+      document.querySelector(".hero-content").style.opacity = "0";
+      document.querySelector(".hero-content").style.transform =
+        "translateY(20px)";
+      setTimeout(() => {
+        document.querySelector(".hero-content").style.transition =
+          "opacity 1s ease, transform 1s ease";
+        document.querySelector(".hero-content").style.opacity = "1";
+        document.querySelector(".hero-content").style.transform =
+          "translateY(0)";
+      }, 100);
+
+      // ── Signature Rituals Tab switching ──
+      function switchTab(tabId) {
+        // Remove active class from all buttons
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Add active class to clicked button
+        const clickedBtn = document.querySelector(`[data-tab="${tabId}"]`);
+        if (clickedBtn) clickedBtn.classList.add('active');
+        
+        // Hide all tab contents
+        document.querySelectorAll('.rituals-grid-content').forEach(grid => {
+          grid.classList.remove('active');
+        });
+        
+        // Show current tab content
+        const targetGrid = document.getElementById(tabId);
+        if (targetGrid) {
+          targetGrid.classList.add('active');
+        }
+      }
+    </script>
+  </body>
+</html>
