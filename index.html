@@ -2272,7 +2272,9 @@
         height: 42px;
         color: var(--beige);
         opacity: 0.85;
-        transition: transform 0.3s ease, color 0.3s ease;
+        transition:
+          transform 0.3s ease,
+          color 0.3s ease;
       }
 
       .category-card-icon svg {
@@ -2401,8 +2403,14 @@
       }
 
       @keyframes tabFadeIn {
-        from { opacity: 0; transform: scaleX(0.7); }
-        to { opacity: 1; transform: scaleX(1); }
+        from {
+          opacity: 0;
+          transform: scaleX(0.7);
+        }
+        to {
+          opacity: 1;
+          transform: scaleX(1);
+        }
       }
 
       .rituals-grid-content {
@@ -2462,7 +2470,9 @@
         position: relative;
         border: 1px solid var(--glass-border);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        transition: border-color 0.4s, box-shadow 0.4s;
+        transition:
+          border-color 0.4s,
+          box-shadow 0.4s;
       }
 
       .ritual-image img {
@@ -2547,7 +2557,9 @@
         overflow: hidden;
         border: 1px solid rgba(212, 175, 55, 0.2);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-        transition: border-color 0.4s ease, transform 0.4s ease;
+        transition:
+          border-color 0.4s ease,
+          transform 0.4s ease;
       }
 
       .why-side-img img {
@@ -2589,7 +2601,9 @@
         font-size: 2.2rem;
         color: var(--gold);
         margin-bottom: 1.2rem;
-        transition: transform 0.3s ease, color 0.3s ease;
+        transition:
+          transform 0.3s ease,
+          color 0.3s ease;
       }
 
       .why-feature-item:hover .why-feature-icon {
@@ -2727,61 +2741,231 @@
           <!-- Moroccanoil -->
           <div class="brand-item" title="Moroccanoil">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <path d="M 62 8 L 70 8 L 75 24 L 80 8 L 88 8 L 88 42 L 82 42 L 82 20 L 76 35 L 74 35 L 68 20 L 68 42 L 62 42 Z" opacity="0.3"/>
-              <text x="75" y="29" font-family="'Jost', sans-serif" font-size="8" letter-spacing="4" text-anchor="middle" font-weight="700">MOROCCANOIL</text>
+              <path
+                d="M 62 8 L 70 8 L 75 24 L 80 8 L 88 8 L 88 42 L 82 42 L 82 20 L 76 35 L 74 35 L 68 20 L 68 42 L 62 42 Z"
+                opacity="0.3"
+              />
+              <text
+                x="75"
+                y="29"
+                font-family="'Jost', sans-serif"
+                font-size="8"
+                letter-spacing="4"
+                text-anchor="middle"
+                font-weight="700"
+              >
+                MOROCCANOIL
+              </text>
             </svg>
           </div>
           <!-- Jeannot Ceuticals -->
           <div class="brand-item" title="Jeannot Ceuticals">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <text x="75" y="22" font-family="'Cormorant Garamond', serif" font-size="18" letter-spacing="2" text-anchor="middle">JEANNOT</text>
-              <text x="75" y="34" font-family="'Jost', sans-serif" font-size="7" letter-spacing="4" text-anchor="middle">CEUTICALS</text>
-              <line x1="45" y1="40" x2="105" y2="40" stroke="currentColor" stroke-width="0.5"/>
-              <text x="75" y="46" font-family="'Jost', sans-serif" font-size="4" letter-spacing="1" text-anchor="middle">BARCELONA</text>
+              <text
+                x="75"
+                y="22"
+                font-family="'Cormorant Garamond', serif"
+                font-size="18"
+                letter-spacing="2"
+                text-anchor="middle"
+              >
+                JEANNOT
+              </text>
+              <text
+                x="75"
+                y="34"
+                font-family="'Jost', sans-serif"
+                font-size="7"
+                letter-spacing="4"
+                text-anchor="middle"
+              >
+                CEUTICALS
+              </text>
+              <line
+                x1="45"
+                y1="40"
+                x2="105"
+                y2="40"
+                stroke="currentColor"
+                stroke-width="0.5"
+              />
+              <text
+                x="75"
+                y="46"
+                font-family="'Jost', sans-serif"
+                font-size="4"
+                letter-spacing="1"
+                text-anchor="middle"
+              >
+                BARCELONA
+              </text>
             </svg>
           </div>
           <!-- L'Oréal Paris -->
           <div class="brand-item" title="L'Oréal Paris">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <text x="75" y="26" font-family="'Jost', sans-serif" font-size="18" letter-spacing="3" text-anchor="middle" font-weight="300">L'ORÉAL</text>
-              <text x="75" y="42" font-family="'Jost', sans-serif" font-size="8" letter-spacing="5" text-anchor="middle" font-weight="400">PARIS</text>
+              <text
+                x="75"
+                y="26"
+                font-family="'Jost', sans-serif"
+                font-size="18"
+                letter-spacing="3"
+                text-anchor="middle"
+                font-weight="300"
+              >
+                L'ORÉAL
+              </text>
+              <text
+                x="75"
+                y="42"
+                font-family="'Jost', sans-serif"
+                font-size="8"
+                letter-spacing="5"
+                text-anchor="middle"
+                font-weight="400"
+              >
+                PARIS
+              </text>
             </svg>
           </div>
           <!-- Schwarzkopf -->
           <div class="brand-item" title="Schwarzkopf Professional">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <path d="M 25 32 C 25 24, 28 18, 33 18 C 35 15, 40 15, 42 17 C 44 12, 50 12, 53 15 C 58 15, 61 18, 61 22 C 61 25, 58 28, 58 32 C 58 35, 55 37, 50 37 C 48 37, 47 39, 47 41 L 33 41 C 33 38, 31 37, 29 37 C 26 37, 25 35, 25 32 Z" opacity="0.85"/>
-              <text x="68" y="26" font-family="'Cormorant Garamond', serif" font-size="15" font-weight="bold">Schwarzkopf</text>
-              <text x="68" y="38" font-family="'Jost', sans-serif" font-size="6" letter-spacing="3">PROFESSIONAL</text>
+              <path
+                d="M 25 32 C 25 24, 28 18, 33 18 C 35 15, 40 15, 42 17 C 44 12, 50 12, 53 15 C 58 15, 61 18, 61 22 C 61 25, 58 28, 58 32 C 58 35, 55 37, 50 37 C 48 37, 47 39, 47 41 L 33 41 C 33 38, 31 37, 29 37 C 26 37, 25 35, 25 32 Z"
+                opacity="0.85"
+              />
+              <text
+                x="68"
+                y="26"
+                font-family="'Cormorant Garamond', serif"
+                font-size="15"
+                font-weight="bold"
+              >
+                Schwarzkopf
+              </text>
+              <text
+                x="68"
+                y="38"
+                font-family="'Jost', sans-serif"
+                font-size="6"
+                letter-spacing="3"
+              >
+                PROFESSIONAL
+              </text>
             </svg>
           </div>
           <!-- Root Deep -->
           <div class="brand-item" title="Root Deep">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <text x="75" y="20" font-family="'Jost', sans-serif" font-size="18" letter-spacing="1" text-anchor="middle" font-weight="700">Root</text>
-              <text x="75" y="38" font-family="'Jost', sans-serif" font-size="18" letter-spacing="1" text-anchor="middle" font-weight="400">Deep</text>
+              <text
+                x="75"
+                y="20"
+                font-family="'Jost', sans-serif"
+                font-size="18"
+                letter-spacing="1"
+                text-anchor="middle"
+                font-weight="700"
+              >
+                Root
+              </text>
+              <text
+                x="75"
+                y="38"
+                font-family="'Jost', sans-serif"
+                font-size="18"
+                letter-spacing="1"
+                text-anchor="middle"
+                font-weight="400"
+              >
+                Deep
+              </text>
             </svg>
           </div>
           <!-- Professional O3+ -->
           <div class="brand-item" title="Professional O3+">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <text x="58" y="26" font-family="'Jost', sans-serif" font-size="8" letter-spacing="1" text-anchor="end">PR</text>
-              <text x="70" y="32" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="500" text-anchor="middle">O</text>
-              <text x="82" y="26" font-family="'Jost', sans-serif" font-size="8" letter-spacing="1" text-anchor="start">FESSIONAL</text>
-              <text x="84" y="44" font-family="'Jost', sans-serif" font-size="12" font-weight="500">3+</text>
+              <text
+                x="58"
+                y="26"
+                font-family="'Jost', sans-serif"
+                font-size="8"
+                letter-spacing="1"
+                text-anchor="end"
+              >
+                PR
+              </text>
+              <text
+                x="70"
+                y="32"
+                font-family="'Cormorant Garamond', serif"
+                font-size="28"
+                font-weight="500"
+                text-anchor="middle"
+              >
+                O
+              </text>
+              <text
+                x="82"
+                y="26"
+                font-family="'Jost', sans-serif"
+                font-size="8"
+                letter-spacing="1"
+                text-anchor="start"
+              >
+                FESSIONAL
+              </text>
+              <text
+                x="84"
+                y="44"
+                font-family="'Jost', sans-serif"
+                font-size="12"
+                font-weight="500"
+              >
+                3+
+              </text>
             </svg>
           </div>
           <!-- Cadiveu Professional -->
           <div class="brand-item" title="Cadiveu Professional">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <text x="75" y="26" font-family="'Jost', sans-serif" font-size="18" letter-spacing="4" text-anchor="middle" font-weight="500">CADIVEU</text>
-              <text x="75" y="40" font-family="'Jost', sans-serif" font-size="7" letter-spacing="3" text-anchor="middle">PROFESSIONAL</text>
+              <text
+                x="75"
+                y="26"
+                font-family="'Jost', sans-serif"
+                font-size="18"
+                letter-spacing="4"
+                text-anchor="middle"
+                font-weight="500"
+              >
+                CADIVEU
+              </text>
+              <text
+                x="75"
+                y="40"
+                font-family="'Jost', sans-serif"
+                font-size="7"
+                letter-spacing="3"
+                text-anchor="middle"
+              >
+                PROFESSIONAL
+              </text>
             </svg>
           </div>
           <!-- MAC -->
           <div class="brand-item" title="MAC Cosmetics">
             <svg class="brand-svg" viewBox="0 0 150 50" fill="currentColor">
-              <text x="75" y="32" font-family="'Jost', sans-serif" font-size="24" letter-spacing="10" text-anchor="middle" font-weight="300">MAC</text>
+              <text
+                x="75"
+                y="32"
+                font-family="'Jost', sans-serif"
+                font-size="24"
+                letter-spacing="10"
+                text-anchor="middle"
+                font-weight="300"
+              >
+                MAC
+              </text>
             </svg>
           </div>
         </div>
@@ -2901,14 +3085,22 @@
       <div class="categories-grid">
         <!-- Card 1 -->
         <a href="#booking" class="category-card">
-          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&auto=format&fit=crop&q=80" alt="Hair Cut" />
+          <img
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&auto=format&fit=crop&q=80"
+            alt="Hair Cut"
+          />
           <div class="category-card-content">
             <div class="category-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="6" cy="6" r="3"/>
-                <circle cx="6" cy="18" r="3"/>
-                <line x1="9" y1="9" x2="20" y2="20"/>
-                <line x1="9" y1="15" x2="20" y2="4"/>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <line x1="9" y1="9" x2="20" y2="20" />
+                <line x1="9" y1="15" x2="20" y2="4" />
               </svg>
             </div>
             <h3 class="category-card-title">Hair Cut</h3>
@@ -2916,13 +3108,23 @@
         </a>
         <!-- Card 2 -->
         <a href="#booking" class="category-card">
-          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80" alt="Hair Spa & Treatment" />
+          <img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80"
+            alt="Hair Spa & Treatment"
+          />
           <div class="category-card-content">
             <div class="category-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2v6M12 8c-3.3 0-6 2.7-6 6v4h12v-4c0-3.3-2.7-6-6-6z"/>
-                <path d="M12 8c1.5 0 3 .5 3 2s-1.5 2-3 2-3-.5-3-2 1.5-2 3-2z"/>
-                <circle cx="12" cy="15" r="1"/>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M12 2v6M12 8c-3.3 0-6 2.7-6 6v4h12v-4c0-3.3-2.7-6-6-6z"
+                />
+                <path d="M12 8c1.5 0 3 .5 3 2s-1.5 2-3 2-3-.5-3-2 1.5-2 3-2z" />
+                <circle cx="12" cy="15" r="1" />
               </svg>
             </div>
             <h3 class="category-card-title">Hair Spa &amp; Treatment</h3>
@@ -2930,13 +3132,23 @@
         </a>
         <!-- Card 3 -->
         <a href="#booking" class="category-card">
-          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&auto=format&fit=crop&q=80" alt="Makeup" />
+          <img
+            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&auto=format&fit=crop&q=80"
+            alt="Makeup"
+          />
           <div class="category-card-content">
             <div class="category-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/>
-                <path d="M12 7c-1.5 0-3 1.5-3 3.5S10.5 14 12 14s3-1.5 3-3.5S13.5 7 12 7z"/>
-                <path d="M8 17s2-1.5 4-1.5 4 1.5 4 1.5"/>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z" />
+                <path
+                  d="M12 7c-1.5 0-3 1.5-3 3.5S10.5 14 12 14s3-1.5 3-3.5S13.5 7 12 7z"
+                />
+                <path d="M8 17s2-1.5 4-1.5 4 1.5 4 1.5" />
               </svg>
             </div>
             <h3 class="category-card-title">Makeup</h3>
@@ -2944,12 +3156,22 @@
         </a>
         <!-- Card 4 -->
         <a href="#booking" class="category-card">
-          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&auto=format&fit=crop&q=80" alt="Skin" />
+          <img
+            src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&auto=format&fit=crop&q=80"
+            alt="Skin"
+          />
           <div class="category-card-content">
             <div class="category-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M16 14c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-3.3 4-8 4-8s4 4.7 4 8z"/>
-                <path d="M12 2v2M12 20v2M4 12H2M22 12h-2"/>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M16 14c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-3.3 4-8 4-8s4 4.7 4 8z"
+                />
+                <path d="M12 2v2M12 20v2M4 12H2M22 12h-2" />
               </svg>
             </div>
             <div class="category-card-arrow">
@@ -3110,15 +3332,38 @@
     <section id="signature-rituals" class="reveal">
       <div class="rituals-header">
         <div class="section-label">Signature Rituals</div>
-        <h2 class="section-title">Bespoke <em class="italic gold">Salon Experiences</em></h2>
-        <p class="section-sub">Indulge in our curated rituals designed for ultimate restoration and luxury.</p>
+        <h2 class="section-title">
+          Bespoke <em class="italic gold">Salon Experiences</em>
+        </h2>
+        <p class="section-sub">
+          Indulge in our curated rituals designed for ultimate restoration and
+          luxury.
+        </p>
       </div>
 
       <!-- Tab Buttons -->
       <div class="tab-container">
-        <button class="tab-btn active" data-tab="hair-tab" onclick="switchTab('hair-tab')">Women's Hairs</button>
-        <button class="tab-btn" data-tab="body-tab" onclick="switchTab('body-tab')">Women's Body Care</button>
-        <button class="tab-btn" data-tab="face-tab" onclick="switchTab('face-tab')">Women's Face Care</button>
+        <button
+          class="tab-btn active"
+          data-tab="hair-tab"
+          onclick="switchTab('hair-tab')"
+        >
+          Women's Hairs
+        </button>
+        <button
+          class="tab-btn"
+          data-tab="body-tab"
+          onclick="switchTab('body-tab')"
+        >
+          Women's Body Care
+        </button>
+        <button
+          class="tab-btn"
+          data-tab="face-tab"
+          onclick="switchTab('face-tab')"
+        >
+          Women's Face Care
+        </button>
       </div>
 
       <!-- Tab Content: Hair -->
@@ -3126,25 +3371,37 @@
         <div class="rituals-grid">
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=500&auto=format&fit=crop&q=80" alt="K-Ssense Head Rituals" />
+              <img
+                src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=500&auto=format&fit=crop&q=80"
+                alt="K-Ssense Head Rituals"
+              />
             </div>
             <h4 class="ritual-title">K-Ssense Head Rituals</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&auto=format&fit=crop&q=80" alt="Glass Shine Wax" />
+              <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&auto=format&fit=crop&q=80"
+                alt="Glass Shine Wax"
+              />
             </div>
             <h4 class="ritual-title">Glass Shine Wax</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80" alt="Capillary Hair Spa" />
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80"
+                alt="Capillary Hair Spa"
+              />
             </div>
             <h4 class="ritual-title">Capillary Hair Spa</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&auto=format&fit=crop&q=80" alt="Advanced Keratin Gloss" />
+              <img
+                src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&auto=format&fit=crop&q=80"
+                alt="Advanced Keratin Gloss"
+              />
             </div>
             <h4 class="ritual-title">Advanced Keratin Gloss</h4>
           </div>
@@ -3156,25 +3413,37 @@
         <div class="rituals-grid">
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&auto=format&fit=crop&q=80" alt="Coconut Body Polish" />
+              <img
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&auto=format&fit=crop&q=80"
+                alt="Coconut Body Polish"
+              />
             </div>
             <h4 class="ritual-title">Coconut Body Polish</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500&auto=format&fit=crop&q=80" alt="Sleek Smooth Silk Wax" />
+              <img
+                src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=500&auto=format&fit=crop&q=80"
+                alt="Sleek Smooth Silk Wax"
+              />
             </div>
             <h4 class="ritual-title">Sleek Smooth Silk Wax</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=500&auto=format&fit=crop&q=80" alt="Gold Radiance Exfoliation" />
+              <img
+                src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=500&auto=format&fit=crop&q=80"
+                alt="Gold Radiance Exfoliation"
+              />
             </div>
             <h4 class="ritual-title">Gold Radiance Exfoliation</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=500&auto=format&fit=crop&q=80" alt="Detoxifying Massage Therapy" />
+              <img
+                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=500&auto=format&fit=crop&q=80"
+                alt="Detoxifying Massage Therapy"
+              />
             </div>
             <h4 class="ritual-title">Detoxifying Massage Therapy</h4>
           </div>
@@ -3186,25 +3455,37 @@
         <div class="rituals-grid">
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&auto=format&fit=crop&q=80" alt="K-Ssense Face Rituals" />
+              <img
+                src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=500&auto=format&fit=crop&q=80"
+                alt="K-Ssense Face Rituals"
+              />
             </div>
             <h4 class="ritual-title">K-Ssense Face Rituals</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&auto=format&fit=crop&q=80" alt="Hydra Radiance Facial" />
+              <img
+                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&auto=format&fit=crop&q=80"
+                alt="Hydra Radiance Facial"
+              />
             </div>
             <h4 class="ritual-title">Hydra Radiance Facial</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&auto=format&fit=crop&q=80" alt="Luminous Glow Infusion" />
+              <img
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&auto=format&fit=crop&q=80"
+                alt="Luminous Glow Infusion"
+              />
             </div>
             <h4 class="ritual-title">Luminous Glow Infusion</h4>
           </div>
           <div class="ritual-card-wrap">
             <div class="ritual-image">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80" alt="Deep Pore Collagen Facial" />
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80"
+                alt="Deep Pore Collagen Facial"
+              />
             </div>
             <h4 class="ritual-title">Deep Pore Collagen Facial</h4>
           </div>
@@ -3217,29 +3498,39 @@
       <!-- Watermark Background SVGs -->
       <div class="why-watermark left">
         <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
-          <circle cx="35" cy="50" r="15"/>
-          <circle cx="35" cy="70" r="15"/>
-          <line x1="45" y1="55" x2="85" y2="85"/>
-          <line x1="45" y1="65" x2="85" y2="35"/>
+          <circle cx="35" cy="50" r="15" />
+          <circle cx="35" cy="70" r="15" />
+          <line x1="45" y1="55" x2="85" y2="85" />
+          <line x1="45" y1="65" x2="85" y2="35" />
         </svg>
       </div>
       <div class="why-watermark right">
         <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
-          <path d="M20,20 L80,20 M20,30 L80,30 M20,40 L80,40 M20,50 L80,50 M20,60 L80,60 M20,70 L80,70 M20,80 L80,80 M20,90 L80,90"/>
-          <line x1="50" y1="10" x2="50" y2="90" stroke-width="4"/>
+          <path
+            d="M20,20 L80,20 M20,30 L80,30 M20,40 L80,40 M20,50 L80,50 M20,60 L80,60 M20,70 L80,70 M20,80 L80,80 M20,90 L80,90"
+          />
+          <line x1="50" y1="10" x2="50" y2="90" stroke-width="4" />
         </svg>
       </div>
 
       <div class="why-header reveal">
         <div class="section-label">Why Aurah</div>
-        <h2 class="section-title">The <em class="italic gold">Aurah</em> Difference</h2>
-        <p class="section-sub">Excellence is not a service, it's our standard. Here is what sets us apart.</p>
+        <h2 class="section-title">
+          The <em class="italic gold">Aurah</em> Difference
+        </h2>
+        <p class="section-sub">
+          Excellence is not a service, it's our standard. Here is what sets us
+          apart.
+        </p>
       </div>
 
       <div class="why-redesigned-grid reveal">
         <!-- Left Column: Stylist Image -->
         <div class="why-side-img reveal reveal-delay-1">
-          <img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?w=500&auto=format&fit=crop&q=80" alt="Expert Hair Stylist at Work" />
+          <img
+            src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?w=500&auto=format&fit=crop&q=80"
+            alt="Expert Hair Stylist at Work"
+          />
         </div>
 
         <!-- Center Column: 4 Features -->
@@ -3250,7 +3541,8 @@
             </div>
             <h3 class="why-feature-title">20+ Years of Experience</h3>
             <p class="why-feature-text">
-              Serving Generations with Style. Trusted by thousands across all age groups for consistent salon excellence.
+              Serving Generations with Style. Trusted by thousands across all
+              age groups for consistent salon excellence.
             </p>
           </div>
 
@@ -3258,9 +3550,12 @@
             <div class="why-feature-icon">
               <i class="fa-solid fa-scissors"></i>
             </div>
-            <h3 class="why-feature-title">Expert Stylists, Certified Professionals</h3>
+            <h3 class="why-feature-title">
+              Expert Stylists, Certified Professionals
+            </h3>
             <p class="why-feature-text">
-              Your Hair in Skilled Hands. Each stylist is trained, certified, and experienced in modern trends &amp; classic cuts.
+              Your Hair in Skilled Hands. Each stylist is trained, certified,
+              and experienced in modern trends &amp; classic cuts.
             </p>
           </div>
 
@@ -3270,7 +3565,8 @@
             </div>
             <h3 class="why-feature-title">4.8★ Rated by Happy Clients</h3>
             <p class="why-feature-text">
-              Rated High Across Platforms. Hundreds of 5-star reviews speak for our consistent quality and care.
+              Rated High Across Platforms. Hundreds of 5-star reviews speak for
+              our consistent quality and care.
             </p>
           </div>
 
@@ -3280,14 +3576,18 @@
             </div>
             <h3 class="why-feature-title">Hygiene First, Always</h3>
             <p class="why-feature-text">
-              Sanitized Tools &amp; Clean Environment. We follow strict hygiene protocols to ensure your safety and comfort.
+              Sanitized Tools &amp; Clean Environment. We follow strict hygiene
+              protocols to ensure your safety and comfort.
             </p>
           </div>
         </div>
 
         <!-- Right Column: Model Image -->
         <div class="why-side-img reveal reveal-delay-2">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=80" alt="Beautiful Client with Premium Hair Styling" />
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=80"
+            alt="Beautiful Client with Premium Hair Styling"
+          />
         </div>
       </div>
     </section>
@@ -4063,23 +4363,23 @@
       // ── Signature Rituals Tab switching ──
       function switchTab(tabId) {
         // Remove active class from all buttons
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-          btn.classList.remove('active');
+        document.querySelectorAll(".tab-btn").forEach((btn) => {
+          btn.classList.remove("active");
         });
-        
+
         // Add active class to clicked button
         const clickedBtn = document.querySelector(`[data-tab="${tabId}"]`);
-        if (clickedBtn) clickedBtn.classList.add('active');
-        
+        if (clickedBtn) clickedBtn.classList.add("active");
+
         // Hide all tab contents
-        document.querySelectorAll('.rituals-grid-content').forEach(grid => {
-          grid.classList.remove('active');
+        document.querySelectorAll(".rituals-grid-content").forEach((grid) => {
+          grid.classList.remove("active");
         });
-        
+
         // Show current tab content
         const targetGrid = document.getElementById(tabId);
         if (targetGrid) {
-          targetGrid.classList.add('active');
+          targetGrid.classList.add("active");
         }
       }
     </script>
