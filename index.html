@@ -51,35 +51,35 @@
 
     <style>
       :root {
-        --black: #000000;
-        --gold: #ebd89c;
-        --gold-light: #f5edce;
-        --gold-dark: #c4b06e;
-        --beige: #f8f5f0;
-        --beige-dark: #ede8df;
-        --white: #ffffff;
-        --glass: rgba(255, 255, 255, 0.04);
-        --glass-border: rgba(235, 216, 156, 0.2);
-        --text-muted: rgba(248, 245, 240, 0.55);
+        --black: #ffffff;
+        --gold: #d63384;
+        --gold-light: #e85d9c;
+        --gold-dark: #a11c5d;
+        --beige: #1a1a1a;
+        --beige-dark: #333333;
+        --white: #1a1a1a;
+        --glass: rgba(0, 0, 0, 0.04);
+        --glass-border: rgba(214, 51, 132, 0.2);
+        --text-muted: rgba(26, 26, 26, 0.65);
         --gold-grad: linear-gradient(
           135deg,
-          #ebd89c 0%,
-          #f5edce 25%,
-          #c4b06e 50%,
-          #f5edce 75%,
-          #ebd89c 100%
+          #d63384 0%,
+          #e85d9c 25%,
+          #a11c5d 50%,
+          #e85d9c 75%,
+          #d63384 100%
         );
         --gold-grad-light: linear-gradient(
           135deg,
-          #f5edce 0%,
-          #fbf7e8 50%,
-          #ebd89c 100%
+          #e85d9c 0%,
+          #f48eb8 50%,
+          #d63384 100%
         );
         --gold-text-grad: linear-gradient(
           135deg,
-          #ebd89c 0%,
-          #f5edce 50%,
-          #c4b06e 100%
+          #d63384 0%,
+          #e85d9c 50%,
+          #a11c5d 100%
         );
       }
 
@@ -244,7 +244,7 @@
       .hero-bg {
         position: absolute;
         inset: 0;
-        background: #000000;
+        background: var(--black);
       }
 
       .hero-lines {
@@ -304,7 +304,7 @@
       .hero-image-placeholder {
         width: 100%;
         height: 100%;
-        background: #000000;
+        background: var(--black);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -533,7 +533,7 @@
 
       /* ─── ABOUT ─── */
       #about {
-        background: #000000;
+        background: var(--black);
         position: relative;
         overflow: hidden;
       }
@@ -571,7 +571,7 @@
       .about-img-inner {
         position: absolute;
         inset: 0;
-        background: #000000;
+        background: var(--black);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -650,7 +650,7 @@
 
       /* ─── SERVICES ─── */
       #services {
-        background: #000000;
+        background: var(--black);
         position: relative;
       }
 
@@ -676,7 +676,7 @@
       }
 
       .service-card {
-        background: #000000;
+        background: var(--black);
         border: 1px solid var(--glass-border);
         padding: 2.5rem;
         transition: all 0.4s ease;
@@ -796,7 +796,7 @@
 
       /* ─── WHY CHOOSE US ─── */
       #why {
-        background: #000000;
+        background: var(--black);
         text-align: center;
       }
 
@@ -874,7 +874,7 @@
       /* ─── BEFORE AFTER ─── */
       /* ─── BEFORE AFTER (Draggable Slider) ─── */
       #results {
-        background: #000000;
+        background: var(--black);
         overflow: hidden;
       }
 
@@ -1082,7 +1082,7 @@
 
       /* ─── TESTIMONIALS ─── */
       #testimonials {
-        background: #000000;
+        background: var(--black);
         position: relative;
       }
 
@@ -1182,7 +1182,7 @@
 
       /* ─── BOOKING ─── */
       #booking {
-        background: #000000;
+        background: var(--black);
         position: relative;
         overflow: hidden;
       }
@@ -1315,7 +1315,7 @@
       }
 
       .form-group select option {
-        background: #000000;
+        background: var(--black);
         color: var(--beige);
       }
 
@@ -1362,7 +1362,7 @@
 
       /* ─── URGENCY BANNER ─── */
       #urgency {
-        background: #000000;
+        background: var(--black);
         border-top: 1px solid var(--glass-border);
         border-bottom: 1px solid var(--glass-border);
         padding: 2.5rem 5%;
@@ -1419,7 +1419,7 @@
 
       /* ─── FAQ ─── */
       #faq {
-        background: #000000;
+        background: var(--black);
       }
 
       .faq-grid {
@@ -1487,7 +1487,7 @@
 
       /* ─── INSTAGRAM ─── */
       #instagram {
-        background: #000000;
+        background: var(--black);
         text-align: center;
       }
 
@@ -1500,7 +1500,7 @@
 
       .ig-item {
         aspect-ratio: 1;
-        background: #000000;
+        background: var(--black);
         border: 1px solid var(--glass-border);
         display: flex;
         align-items: center;
@@ -1553,7 +1553,7 @@
 
       /* ─── FOOTER ─── */
       footer {
-        background: #000000;
+        background: var(--black);
         border-top: 1px solid var(--glass-border);
         padding: 4rem 5% 2rem;
       }
@@ -1707,7 +1707,7 @@
 
       /* ─── REFUND & CANCELLATION POLICY ─── */
       #refund-policy {
-        background: #000000;
+        background: var(--black);
         padding: 5rem 2rem;
       }
 
@@ -1910,7 +1910,7 @@
       }
 
       .exit-popup {
-        background: #000000;
+        background: var(--black);
         border: 1px solid var(--gold);
         padding: 3.5rem;
         max-width: 540px;
@@ -2191,7 +2191,7 @@
 
       /* ─── BRAND LOGOS ─── */
       #brands {
-        background: #000000;
+        background: var(--black);
         padding: 4rem 5%;
         border-bottom: 1px solid var(--glass-border);
       }
@@ -2260,7 +2260,7 @@
 
       /* ─── CATEGORIES (WOMEN) ─── */
       #categories {
-        background: #000000;
+        background: var(--black);
         padding: 6rem 5%;
       }
 
@@ -2413,7 +2413,7 @@
 
       /* ─── SIGNATURE RITUALS ─── */
       #signature-rituals {
-        background: #000000;
+        background: var(--black);
         padding: 6rem 5%;
         position: relative;
         border-top: 1px solid var(--glass-border);
@@ -2602,7 +2602,7 @@
       #why {
         position: relative;
         overflow: hidden;
-        background: #000000;
+        background: var(--black);
       }
 
       .why-watermark {
