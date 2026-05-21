@@ -52,34 +52,34 @@
     <style>
       :root {
         --black: #000000;
-        --gold: #d4af37;
-        --gold-light: #e8cc6a;
-        --gold-dark: #a88b1f;
+        --gold: #EBD89C;
+        --gold-light: #F5EDCE;
+        --gold-dark: #C4B06E;
         --beige: #f8f5f0;
         --beige-dark: #ede8df;
         --white: #ffffff;
         --glass: rgba(255, 255, 255, 0.04);
-        --glass-border: rgba(212, 175, 55, 0.2);
+        --glass-border: rgba(235, 216, 156, 0.2);
         --text-muted: rgba(248, 245, 240, 0.55);
         --gold-grad: linear-gradient(
           135deg,
-          #bf953f 0%,
-          #fcf6ba 25%,
-          #b38728 50%,
-          #fbf5b7 75%,
-          #aa771c 100%
+          #EBD89C 0%,
+          #F5EDCE 25%,
+          #C4B06E 50%,
+          #F5EDCE 75%,
+          #EBD89C 100%
         );
         --gold-grad-light: linear-gradient(
           135deg,
-          #e5c07b 0%,
-          #f3ebc0 50%,
-          #c49a5b 100%
+          #F5EDCE 0%,
+          #FBF7E8 50%,
+          #EBD89C 100%
         );
         --gold-text-grad: linear-gradient(
           135deg,
-          #d4af37 0%,
-          #f7e6a7 50%,
-          #b3923b 100%
+          #EBD89C 0%,
+          #F5EDCE 50%,
+          #C4B06E 100%
         );
       }
 
@@ -251,8 +251,8 @@
         position: absolute;
         inset: 0;
         background-image:
-          linear-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(212, 175, 55, 0.06) 1px, transparent 1px);
+          linear-gradient(rgba(235, 216, 156, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(235, 216, 156, 0.06) 1px, transparent 1px);
         background-size: 80px 80px;
         mask-image: radial-gradient(
           ellipse 70% 70% at 50% 50%,
@@ -269,7 +269,7 @@
         width: min(55vw, 650px);
         height: min(55vw, 650px);
         border-radius: 50%;
-        border: 1px solid rgba(212, 175, 55, 0.12);
+        border: 1px solid rgba(235, 216, 156, 0.12);
         background: transparent;
       }
 
@@ -278,7 +278,7 @@
         position: absolute;
         inset: 40px;
         border-radius: 50%;
-        border: 1px solid rgba(212, 175, 55, 0.08);
+        border: 1px solid rgba(235, 216, 156, 0.08);
       }
 
       .hero-deco-circle::after {
@@ -286,7 +286,7 @@
         position: absolute;
         inset: 80px;
         border-radius: 50%;
-        border: 1px solid rgba(212, 175, 55, 0.05);
+        border: 1px solid rgba(235, 216, 156, 0.05);
       }
 
       .hero-image-container {
@@ -424,7 +424,7 @@
         position: relative;
         overflow: hidden;
         border: none;
-        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+        box-shadow: 0 4px 15px rgba(235, 216, 156, 0.15);
       }
 
       .btn-primary::before {
@@ -848,7 +848,7 @@
       }
 
       .why-card:hover {
-        border-color: rgba(212, 175, 55, 0.4);
+        border-color: rgba(235, 216, 156, 0.4);
         transform: translateY(-4px);
       }
 
@@ -904,7 +904,7 @@
       }
 
       .ba-card:hover {
-        border-color: rgba(212, 175, 55, 0.4);
+        border-color: rgba(235, 216, 156, 0.4);
       }
 
       /* Comparison container */
@@ -948,7 +948,7 @@
         z-index: 10;
         transform: translateX(-50%);
         pointer-events: none;
-        box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+        box-shadow: 0 0 12px rgba(235, 216, 156, 0.4);
       }
 
       .ba-handle::before {
@@ -983,7 +983,7 @@
         justify-content: center;
         pointer-events: none;
         box-shadow:
-          0 4px 20px rgba(212, 175, 55, 0.4),
+          0 4px 20px rgba(235, 216, 156, 0.4),
           0 0 0 4px rgba(0, 0, 0, 0.6);
         transition:
           transform 0.2s ease,
@@ -993,7 +993,7 @@
       .ba-comparison:active .ba-handle-circle {
         transform: translate(-50%, -50%) scale(1.15);
         box-shadow:
-          0 6px 30px rgba(212, 175, 55, 0.6),
+          0 6px 30px rgba(235, 216, 156, 0.6),
           0 0 0 6px rgba(0, 0, 0, 0.6);
       }
 
@@ -1021,7 +1021,7 @@
         color: var(--gold);
         backdrop-filter: blur(10px);
         white-space: nowrap;
-        border: 1px solid rgba(212, 175, 55, 0.15);
+        border: 1px solid rgba(235, 216, 156, 0.15);
       }
 
       .ba-label-before {
@@ -1077,7 +1077,7 @@
       .slider-btn:hover {
         border-color: var(--gold);
         color: var(--gold);
-        background: rgba(212, 175, 55, 0.05);
+        background: rgba(235, 216, 156, 0.05);
       }
 
       /* ─── TESTIMONIALS ─── */
@@ -1093,7 +1093,7 @@
         left: 5%;
         font-family: "Cormorant Garamond", serif;
         font-size: 15rem;
-        color: rgba(212, 175, 55, 0.04);
+        color: rgba(235, 216, 156, 0.04);
         line-height: 1;
         pointer-events: none;
       }
@@ -1123,7 +1123,7 @@
       }
 
       .testi-card:hover {
-        border-color: rgba(212, 175, 55, 0.4);
+        border-color: rgba(235, 216, 156, 0.4);
         transform: translateY(-3px);
       }
 
@@ -1291,8 +1291,8 @@
       .form-group select,
       .form-group textarea {
         width: 100%;
-        background: rgba(212, 175, 55, 0.03);
-        border: 1px solid rgba(212, 175, 55, 0.2);
+        background: rgba(235, 216, 156, 0.03);
+        border: 1px solid rgba(235, 216, 156, 0.2);
         color: var(--beige);
         padding: 0.85rem 1rem;
         font-family: "Jost", sans-serif;
@@ -1311,7 +1311,7 @@
       .form-group select:focus,
       .form-group textarea:focus {
         border-color: var(--gold);
-        background: rgba(212, 175, 55, 0.04);
+        background: rgba(235, 216, 156, 0.04);
       }
 
       .form-group select option {
@@ -1344,7 +1344,7 @@
         cursor: pointer;
         transition: all 0.3s;
         margin-top: 0.5rem;
-        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+        box-shadow: 0 4px 15px rgba(235, 216, 156, 0.15);
       }
 
       .btn-submit:hover {
@@ -1409,7 +1409,7 @@
         display: inline-block;
         transition: all 0.3s;
         white-space: nowrap;
-        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+        box-shadow: 0 4px 15px rgba(235, 216, 156, 0.15);
       }
 
       .urgency-btn:hover {
@@ -1675,10 +1675,11 @@
         border-top: 1px solid var(--glass-border);
         padding-top: 1.5rem;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        flex-wrap: gap;
-        gap: 1rem;
+        text-align: center;
+        gap: 0.5rem;
       }
 
       .footer-copy {
@@ -1704,6 +1705,93 @@
         color: var(--gold);
       }
 
+      /* ─── REFUND & CANCELLATION POLICY ─── */
+      #refund-policy {
+        background: #000000;
+        padding: 5rem 2rem;
+      }
+
+      .policy-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .policy-container h2 {
+        font-size: 2.2rem;
+        color: var(--beige);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .policy-date {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        margin-bottom: 2.5rem;
+      }
+
+      .policy-container h3 {
+        font-size: 1.3rem;
+        color: var(--gold);
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      }
+
+      .policy-container p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+        margin-bottom: 0.5rem;
+      }
+
+      .policy-list {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0 2rem;
+      }
+
+      .policy-list li {
+        font-size: 0.9rem;
+        color: rgba(248, 245, 240, 0.7);
+        line-height: 1.9;
+        padding-left: 1.8rem;
+        position: relative;
+        margin-bottom: 0.4rem;
+      }
+
+      .policy-list li::before {
+        content: attr(data-num) ".";
+        position: absolute;
+        left: 0;
+        color: var(--gold);
+        font-weight: 600;
+      }
+
+      .policy-note {
+        margin-top: 2rem;
+        padding: 1.2rem 1.5rem;
+        border-left: 3px solid var(--gold);
+        background: rgba(235, 216, 156, 0.04);
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+      }
+
+      .footer-credit {
+        font-size: 0.72rem;
+        color: rgba(248, 245, 240, 0.25);
+        letter-spacing: 0.05em;
+      }
+
+      .footer-credit a {
+        color: var(--gold);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-credit a:hover {
+        color: var(--gold-light);
+      }
+
       /* ─── STICKY CTA ─── */
       .sticky-cta {
         position: fixed;
@@ -1723,7 +1811,7 @@
         transition:
           transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
           background 0.3s;
-        box-shadow: 0 10px 40px rgba(212, 175, 55, 0.25);
+        box-shadow: 0 10px 40px rgba(235, 216, 156, 0.25);
         white-space: nowrap;
         border: none;
       }
@@ -1734,7 +1822,7 @@
 
       .sticky-cta:hover {
         background: var(--gold-light);
-        box-shadow: 0 12px 45px rgba(212, 175, 55, 0.35);
+        box-shadow: 0 12px 45px rgba(235, 216, 156, 0.35);
       }
 
       /* ─── WHATSAPP FLOAT ─── */
@@ -1754,7 +1842,7 @@
         font-size: 1.6rem;
         text-decoration: none;
         z-index: 900;
-        box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+        box-shadow: 0 8px 30px rgba(235, 216, 156, 0.15);
         transition: all 0.3s ease;
         animation: wa-bounce 3s ease infinite;
       }
@@ -1763,7 +1851,7 @@
         transform: scale(1.1);
         border-color: var(--gold-light);
         color: var(--gold-light);
-        box-shadow: 0 12px 40px rgba(212, 175, 55, 0.35);
+        box-shadow: 0 12px 40px rgba(235, 216, 156, 0.35);
         animation: none;
       }
 
@@ -2219,7 +2307,7 @@
         height: 380px;
         border-radius: 12px;
         overflow: hidden;
-        border: 1px solid rgba(212, 175, 55, 0.25);
+        border: 1px solid rgba(235, 216, 156, 0.25);
         background-color: var(--black);
         cursor: pointer;
         transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -2254,7 +2342,7 @@
 
       .category-card:hover {
         border-color: var(--gold);
-        box-shadow: 0 12px 35px rgba(212, 175, 55, 0.2);
+        box-shadow: 0 12px 35px rgba(235, 216, 156, 0.2);
       }
 
       .category-card-content {
@@ -2320,7 +2408,7 @@
         background: var(--gold);
         color: var(--black);
         transform: translateY(-50%) scale(1.1);
-        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        box-shadow: 0 6px 20px rgba(235, 216, 156, 0.4);
       }
 
       /* ─── SIGNATURE RITUALS ─── */
@@ -2490,7 +2578,7 @@
 
       .ritual-card-wrap:hover .ritual-image {
         border-color: var(--gold);
-        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+        box-shadow: 0 10px 30px rgba(235, 216, 156, 0.15);
       }
 
       .ritual-title {
@@ -2555,7 +2643,7 @@
         aspect-ratio: 3/4;
         border-radius: 16px;
         overflow: hidden;
-        border: 1px solid rgba(212, 175, 55, 0.2);
+        border: 1px solid rgba(235, 216, 156, 0.2);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
         transition:
           border-color 0.4s ease,
@@ -4010,6 +4098,34 @@
       </div>
     </section>
 
+    <!-- ── REFUND & CANCELLATION POLICY ── -->
+    <section id="refund-policy">
+      <div class="policy-container reveal">
+        <h2>Refund & Cancellation Policy</h2>
+        <p class="policy-date">Last Updated: 1.09.2025</p>
+
+        <h3>Interpretation and Definitions</h3>
+        <p>Interpretation: Headings for convenience only.</p>
+        <p>Definitions: Advance Payment, Cancellation, No-Show, Product Return.</p>
+
+        <h3>Rules</h3>
+        <ol class="policy-list">
+          <li data-num="1">Rescheduling: Allowed 24 hrs in advance, valid for 30 days.</li>
+          <li data-num="2">Cancellations/No-Shows: &lt;24 hrs notice forfeits advance.</li>
+          <li data-num="3">Advance Payments: Non-refundable, adjustable for rescheduled services.</li>
+          <li data-num="4">Service Dissatisfaction: Remedies via re-service or adjustment; no cash refunds.</li>
+          <li data-num="5">Product Returns: Accepted if unopened, within 7 days, with receipt. Refund issued in same payment mode.</li>
+          <li data-num="6">Exceptions: No refunds for partly used packages, memberships, or promotional services.</li>
+          <li data-num="7">Grievances: info@aurahbykoyel.in | +91 91230 93939.</li>
+          <li data-num="8">Jurisdiction: Disputes under Kolkata jurisdiction.</li>
+        </ol>
+
+        <div class="policy-note">
+          These policies are designed to protect both Aurah By Koyel and its clients, ensuring fairness, transparency, and compliance with legal standards.
+        </div>
+      </div>
+    </section>
+
     <!-- ── FOOTER ── -->
     <footer id="footer">
       <div class="footer-grid">
@@ -4114,10 +4230,8 @@
           © 2026 Aurah By Koyel. All rights reserved. Precision in every
           treatment.
         </p>
-        <div class="footer-legal">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms & Conditions</a>
-          <a href="cookie.html">Cookie Policy</a>
+        <div class="footer-credit">
+          Designed & Developed by <a href="https://goadslive.in" target="_blank" rel="noopener noreferrer">GoAdsLive</a>
         </div>
       </div>
     </footer>
