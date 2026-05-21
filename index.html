@@ -52,9 +52,9 @@
     <style>
       :root {
         --black: #000000;
-        --gold: #EBD89C;
-        --gold-light: #F5EDCE;
-        --gold-dark: #C4B06E;
+        --gold: #ebd89c;
+        --gold-light: #f5edce;
+        --gold-dark: #c4b06e;
         --beige: #f8f5f0;
         --beige-dark: #ede8df;
         --white: #ffffff;
@@ -63,23 +63,23 @@
         --text-muted: rgba(248, 245, 240, 0.55);
         --gold-grad: linear-gradient(
           135deg,
-          #EBD89C 0%,
-          #F5EDCE 25%,
-          #C4B06E 50%,
-          #F5EDCE 75%,
-          #EBD89C 100%
+          #ebd89c 0%,
+          #f5edce 25%,
+          #c4b06e 50%,
+          #f5edce 75%,
+          #ebd89c 100%
         );
         --gold-grad-light: linear-gradient(
           135deg,
-          #F5EDCE 0%,
-          #FBF7E8 50%,
-          #EBD89C 100%
+          #f5edce 0%,
+          #fbf7e8 50%,
+          #ebd89c 100%
         );
         --gold-text-grad: linear-gradient(
           135deg,
-          #EBD89C 0%,
-          #F5EDCE 50%,
-          #C4B06E 100%
+          #ebd89c 0%,
+          #f5edce 50%,
+          #c4b06e 100%
         );
       }
 
@@ -2738,6 +2738,216 @@
           gap: 2.5rem;
         }
       }
+
+      /* =========================
+   Refund Policy Responsive
+========================= */
+
+      #refund-policy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        width: 90%;
+        margin: auto;
+        padding: 60px 0;
+        flex-wrap: wrap;
+      }
+
+      .policy-container {
+        flex: 1;
+        min-width: 320px;
+        max-width: 700px;
+      }
+
+      .policy-container h2 {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+
+      .policy-date {
+        margin-bottom: 30px;
+        opacity: 0.7;
+      }
+
+      .policy-container h3 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+
+      .policy-container p,
+      .policy-list li {
+        font-size: 17px;
+        line-height: 1.8;
+      }
+
+      .policy-list {
+        padding-left: 20px;
+      }
+
+      .policy-list li {
+        margin-bottom: 15px;
+      }
+
+      .policy-note {
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 12px;
+        line-height: 1.7;
+      }
+
+      .policy-image {
+        flex: 1;
+        min-width: 280px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .policy-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      /* =========================
+   Tablet
+========================= */
+
+      @media (max-width: 992px) {
+        #refund-policy {
+          gap: 30px;
+        }
+
+        .policy-container h2 {
+          font-size: 34px;
+        }
+
+        .policy-container h3 {
+          font-size: 22px;
+        }
+      }
+
+      /* =========================
+   Mobile
+========================= */
+
+      @media (max-width: 768px) {
+        #refund-policy {
+          flex-direction: column-reverse;
+          width: 95%;
+          padding: 40px 0;
+        }
+
+        .policy-container {
+          width: 100%;
+        }
+
+        .policy-container h2 {
+          font-size: 28px;
+          text-align: center;
+        }
+
+        .policy-date {
+          text-align: center;
+        }
+
+        .policy-container h3 {
+          font-size: 20px;
+        }
+
+        .policy-container p,
+        .policy-list li {
+          font-size: 15px;
+          line-height: 1.7;
+        }
+
+        .policy-image img {
+          max-width: 100%;
+        }
+
+        .policy-note {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #refund-policy {
+          flex-direction: column;
+          width: 95%;
+          padding: 40px 0;
+        }
+
+        .policy-image {
+          display: none;
+        }
+
+        .policy-container {
+          width: 100%;
+        }
+
+        .policy-container h2 {
+          font-size: 28px;
+          text-align: center;
+        }
+
+        .policy-date {
+          text-align: center;
+        }
+
+        .policy-container h3 {
+          font-size: 20px;
+        }
+
+        .policy-container p,
+        .policy-list li {
+          font-size: 15px;
+          line-height: 1.7;
+        }
+
+        .policy-note {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 768px) {
+        #refund-policy {
+          flex-direction: column;
+          width: 95%;
+          padding: 40px 0;
+        }
+
+        .policy-image {
+          display: none;
+        }
+
+        .policy-container {
+          width: 100%;
+        }
+
+        .policy-container h2 {
+          font-size: 28px;
+          text-align: center;
+        }
+
+        .policy-date {
+          text-align: center;
+        }
+
+        .policy-container h3 {
+          font-size: 20px;
+        }
+
+        .policy-container p,
+        .policy-list li {
+          font-size: 15px;
+          line-height: 1.7;
+        }
+
+        .policy-note {
+          font-size: 14px;
+        }
+      }
     </style>
   </head>
 
@@ -4099,31 +4309,59 @@
     </section>
 
     <!-- ── REFUND & CANCELLATION POLICY ── -->
-    <section id="refund-policy">
+    <section
+      id="refund-policy"
+      style="display: flex; justify-content: center; width: 90%"
+    >
       <div class="policy-container reveal">
         <h2>Refund & Cancellation Policy</h2>
         <p class="policy-date">Last Updated: 1.09.2025</p>
 
         <h3>Interpretation and Definitions</h3>
         <p>Interpretation: Headings for convenience only.</p>
-        <p>Definitions: Advance Payment, Cancellation, No-Show, Product Return.</p>
+        <p>
+          Definitions: Advance Payment, Cancellation, No-Show, Product Return.
+        </p>
 
         <h3>Rules</h3>
         <ol class="policy-list">
-          <li data-num="1">Rescheduling: Allowed 24 hrs in advance, valid for 30 days.</li>
-          <li data-num="2">Cancellations/No-Shows: &lt;24 hrs notice forfeits advance.</li>
-          <li data-num="3">Advance Payments: Non-refundable, adjustable for rescheduled services.</li>
-          <li data-num="4">Service Dissatisfaction: Remedies via re-service or adjustment; no cash refunds.</li>
-          <li data-num="5">Product Returns: Accepted if unopened, within 7 days, with receipt. Refund issued in same payment mode.</li>
-          <li data-num="6">Exceptions: No refunds for partly used packages, memberships, or promotional services.</li>
-          <li data-num="7">Grievances: info@aurahbykoyel.in | +91 91230 93939.</li>
-          <li data-num="8">Jurisdiction: Disputes under Kolkata jurisdiction.</li>
+          <li data-num="1">
+            Rescheduling: Allowed 24 hrs in advance, valid for 30 days.
+          </li>
+          <li data-num="2">
+            Cancellations/No-Shows: &lt;24 hrs notice forfeits advance.
+          </li>
+          <li data-num="3">
+            Advance Payments: Non-refundable, adjustable for rescheduled
+            services.
+          </li>
+          <li data-num="4">
+            Service Dissatisfaction: Remedies via re-service or adjustment; no
+            cash refunds.
+          </li>
+          <li data-num="5">
+            Product Returns: Accepted if unopened, within 7 days, with receipt.
+            Refund issued in same payment mode.
+          </li>
+          <li data-num="6">
+            Exceptions: No refunds for partly used packages, memberships, or
+            promotional services.
+          </li>
+          <li data-num="7">
+            Grievances: info@aurahbykoyel.in | +91 91230 93939.
+          </li>
+          <li data-num="8">
+            Jurisdiction: Disputes under Kolkata jurisdiction.
+          </li>
         </ol>
 
         <div class="policy-note">
-          These policies are designed to protect both Aurah By Koyel and its clients, ensuring fairness, transparency, and compliance with legal standards.
+          These policies are designed to protect both Aurah By Koyel and its
+          clients, ensuring fairness, transparency, and compliance with legal
+          standards.
         </div>
       </div>
+      <img src="assets/images/policy.jpeg" style="width: 40%" />
     </section>
 
     <!-- ── FOOTER ── -->
@@ -4231,7 +4469,13 @@
           treatment.
         </p>
         <div class="footer-credit">
-          Designed & Developed by <a href="https://goadslive.in" target="_blank" rel="noopener noreferrer">GoAdsLive</a>
+          Designed & Developed by
+          <a
+            href="https://goadslive.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GoAdsLive</a
+          >
         </div>
       </div>
     </footer>
