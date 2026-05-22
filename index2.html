@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurah By Koyel - Price List</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #ffffff;
+        color: #111;
+      }
+
+      .pricing-section {
+        width: 100%;
+        padding: 80px 5%;
+        background: #fff;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title h2 {
+        font-size: 3rem;
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .section-title p {
+        color: #777;
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+      }
+
+      .pricing-card {
+        background: #0f0f0f;
+        border-radius: 22px;
+        padding: 30px;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        transition: 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .pricing-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #d4af37, #f7e7a9);
+        transition: 0.5s;
+      }
+
+      .pricing-card:hover::before {
+        left: 0;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .pricing-card h3 {
+        color: #d4af37;
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        padding-bottom: 15px;
+      }
+
+      .price-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .price-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        padding-bottom: 12px;
+      }
+
+      .price-item span:first-child {
+        color: #fff;
+        font-size: 0.98rem;
+        line-height: 1.5;
+      }
+
+      .price-item span:last-child {
+        color: #d4af37;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .sub-heading {
+        color: #f7e7a9;
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        .section-title h2 {
+          font-size: 2.2rem;
+        }
+
+        .pricing-card {
+          padding: 25px;
+        }
+
+        .price-item {
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .price-item span:last-child {
+          align-self: flex-start;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="pricing-section">
+      <div class="section-title">
+        <h2>Our Beauty Services</h2>
+        <p>Luxury Hair • Skin • Beauty Care</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Hair Treatment -->
+        <div class="pricing-card">
+          <h3>Hair Treatment</h3>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>Straightening / Smoothening</span>
+              <span>₹3499</span>
+            </div>
+
+            <div class="price-item">
+              <span>Keratin Treatment</span>
+              <span>₹3999</span>
+            </div>
+
+            <div class="price-item">
+              <span>Botox Treatment</span>
+              <span>₹4999</span>
+            </div>
+
+            <div class="price-item">
+              <span>Nanoplastia Treatment</span>
+              <span>₹4499</span>
+            </div>
+
+            <div class="price-item">
+              <span>Bluetox Treatment</span>
+              <span>₹3999</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hair Cut -->
+        <div class="pricing-card">
+          <h3>Hair Cut</h3>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>Hair Cut (Basic)</span>
+              <span>₹400</span>
+            </div>
+
+            <div class="price-item">
+              <span>Hair Cut (Advance)</span>
+              <span>₹500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hair Colour -->
+        <div class="pricing-card">
+          <h3>Hair Colour</h3>
+
+          <div class="sub-heading">Global Colour</div>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>Streax (Shoulder Length)</span>
+              <span>₹1800</span>
+            </div>
+
+            <div class="price-item">
+              <span>Matrix (Shoulder Length)</span>
+              <span>₹1800</span>
+            </div>
+
+            <div class="price-item">
+              <span>L'Oréal (Shoulder Length)</span>
+              <span>₹2400</span>
+            </div>
+
+            <div class="price-item">
+              <span>Wella (Shoulder Length)</span>
+              <span>₹2800</span>
+            </div>
+
+            <div class="price-item">
+              <span>Schwarzkopf (Shoulder Length)</span>
+              <span>₹2800</span>
+            </div>
+
+            <div class="price-item">
+              <span>Highlight (Per Foil)</span>
+              <span>₹400 - ₹450</span>
+            </div>
+
+            <div class="price-item">
+              <span>Balayage</span>
+              <span>₹4000</span>
+            </div>
+
+            <div class="price-item">
+              <span>Root Touch</span>
+              <span>Starting ₹1400</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Threading -->
+        <div class="pricing-card">
+          <h3>Threading</h3>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>Eye Brows & Forehead</span>
+              <span>₹50</span>
+            </div>
+
+            <div class="price-item">
+              <span>Upper Lips</span>
+              <span>₹20</span>
+            </div>
+
+            <div class="price-item">
+              <span>Full Face</span>
+              <span>₹300</span>
+            </div>
+
+            <div class="price-item">
+              <span>Side Locks</span>
+              <span>₹50</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Waxing -->
+        <div class="pricing-card">
+          <h3>Waxing</h3>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>Full Face</span>
+              <span>₹600</span>
+            </div>
+
+            <div class="price-item">
+              <span>Upper Lip</span>
+              <span>₹70</span>
+            </div>
+
+            <div class="price-item">
+              <span>Side Locks</span>
+              <span>₹150</span>
+            </div>
+
+            <div class="price-item">
+              <span>Under Arms</span>
+              <span>₹300</span>
+            </div>
+
+            <div class="price-item">
+              <span>Full Arms</span>
+              <span>₹999</span>
+            </div>
+
+            <div class="price-item">
+              <span>Half Leg</span>
+              <span>₹899</span>
+            </div>
+
+            <div class="price-item">
+              <span>Full Leg</span>
+              <span>₹1499</span>
+            </div>
+
+            <div class="price-item">
+              <span>Full Back</span>
+              <span>₹999</span>
+            </div>
+
+            <div class="price-item">
+              <span>Bikini Wax</span>
+              <span>₹1499</span>
+            </div>
+
+            <div class="price-item">
+              <span>Full Body</span>
+              <span>₹3999</span>
+            </div>
+
+            <div class="price-item">
+              <span>Body Polishing</span>
+              <span>₹4500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skin Care -->
+        <div class="pricing-card">
+          <h3>Skin Care</h3>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>Clean-up</span>
+              <span>₹499</span>
+            </div>
+
+            <div class="price-item">
+              <span>Fruit Facial</span>
+              <span>₹699</span>
+            </div>
+
+            <div class="price-item">
+              <span>Lotus Gold Facial</span>
+              <span>₹1699</span>
+            </div>
+
+            <div class="price-item">
+              <span>O3+ Shine & Glow</span>
+              <span>₹2199</span>
+            </div>
+
+            <div class="price-item">
+              <span>Korean Glass Skin Facial</span>
+              <span>₹3499</span>
+            </div>
+
+            <div class="price-item">
+              <span>O3+ Power Whitening</span>
+              <span>₹1999</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hair Spa -->
+        <div class="pricing-card">
+          <h3>Hair Spa</h3>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>Streax Hair Spa</span>
+              <span>₹999</span>
+            </div>
+
+            <div class="price-item">
+              <span>Matrix Hair Spa</span>
+              <span>₹1199</span>
+            </div>
+
+            <div class="price-item">
+              <span>L'Oréal Hair Spa</span>
+              <span>₹1299</span>
+            </div>
+
+            <div class="price-item">
+              <span>Wella Hair Spa</span>
+              <span>₹1499</span>
+            </div>
+
+            <div class="price-item">
+              <span>Korean Hair Spa</span>
+              <span>₹1399</span>
+            </div>
+
+            <div class="price-item">
+              <span>Keratin Hair Spa</span>
+              <span>₹1799</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pedicure -->
+        <div class="pricing-card">
+          <h3>Pedicure</h3>
+
+          <div class="price-list">
+            <div class="price-item">
+              <span>VLCC</span>
+              <span>₹999</span>
+            </div>
+
+            <div class="price-item">
+              <span>Lotus Crystal</span>
+              <span>₹1499</span>
+            </div>
+
+            <div class="price-item">
+              <span>Raga</span>
+              <span>₹1199</span>
+            </div>
+
+            <div class="price-item">
+              <span>Bombini</span>
+              <span>₹1999</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
