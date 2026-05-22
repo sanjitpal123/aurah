@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -2401,7 +2401,7 @@
         height: 60px;
         align-items: center;
         justify-content: center;
-        color: #888888;
+        color: #1a1a1a;
         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
         margin: 0 2rem;
@@ -3320,6 +3320,7 @@
         .brand-item {
           width: 80px !important;
           margin: 0 10px !important;
+          color: #1a1a1a;
         }
 
         .brand-item .brand-svg {
@@ -3329,6 +3330,28 @@
         #brands {
           padding: 2rem 5% !important;
         }
+        
+        .testi-card {
+          width: 100% !important;
+        }
+        
+        .policy-image {
+          display: none !important;
+        }
+        
+        .footer-col h4,
+        .footer-links li {
+          text-align: left !important;
+        }
+        
+        .footer-col {
+          align-items: flex-start !important;
+          text-align: left !important;
+        }
+      }
+
+      .brand-item {
+          color: #1a1a1a;
       }
     </style>
   </head>
@@ -4022,7 +4045,7 @@
         <a href="#booking" class="category-card">
           <img
             src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=80"
-            alt="Hair Spa & Treatment"
+            alt="Hair Smoothing"
           />
           <div class="category-card-content">
             <div class="category-card-icon">
@@ -4039,7 +4062,7 @@
                 <circle cx="12" cy="15" r="1" />
               </svg>
             </div>
-            <h3 class="category-card-title">Hair Spa &amp; Treatment</h3>
+            <h3 class="category-card-title">Hair Smoothing</h3>
           </div>
         </a>
         <!-- Card 3 -->
@@ -5333,74 +5356,7 @@
         baTrack.style.transform = `translateX(-${baIndex * cardWidth}px)`;
       });
 
-      // Auto slide
-      let baAutoSlide = setInterval(baNext, 4000);
-
-      // Pause auto slide on hover or touch
-      baTrack.addEventListener("mouseenter", () => clearInterval(baAutoSlide));
-      baTrack.addEventListener("mouseleave", () => {
-        clearInterval(baAutoSlide);
-        baAutoSlide = setInterval(baNext, 4000);
-      });
-      baTrack.addEventListener("touchstart", () => clearInterval(baAutoSlide), {
-        passive: true,
-      });
-      baTrack.addEventListener("touchend", () => {
-        clearInterval(baAutoSlide);
-        baAutoSlide = setInterval(baNext, 4000);
-      });
-
-      // Drag to slide
-      let isBaDragging = false;
-      let baStartX;
-      let baCurrentTranslate = 0;
-
-      const baDragStart = (e) => {
-        if (e.target.closest(".ba-handle")) return;
-        isBaDragging = true;
-        baTrack.style.transition = "none";
-        baStartX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
-        const cardWidth = baCards[0].offsetWidth + 32;
-        baCurrentTranslate = -baIndex * cardWidth;
-      };
-
-      const baDragMove = (e) => {
-        if (!isBaDragging) return;
-        const x = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
-        const walk = x - baStartX;
-        baTrack.style.transform = `translateX(${baCurrentTranslate + walk}px)`;
-      };
-
-      const baDragEnd = (e) => {
-        if (!isBaDragging) return;
-        isBaDragging = false;
-        baTrack.style.transition =
-          "transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
-        const x = e.type.includes("mouse")
-          ? e.pageX
-          : e.changedTouches
-            ? e.changedTouches[0].clientX
-            : baStartX;
-        const walk = x - baStartX;
-
-        if (walk < -50) {
-          baNext();
-        } else if (walk > 50) {
-          const cardWidth = baCards[0].offsetWidth + 32;
-          baIndex = Math.max(baIndex - 1, 0);
-          baTrack.style.transform = `translateX(-${baIndex * cardWidth}px)`;
-        } else {
-          const cardWidth = baCards[0].offsetWidth + 32;
-          baTrack.style.transform = `translateX(-${baIndex * cardWidth}px)`;
-        }
-      };
-
-      baTrack.addEventListener("mousedown", baDragStart);
-      baTrack.addEventListener("mousemove", baDragMove);
-      window.addEventListener("mouseup", baDragEnd);
-      baTrack.addEventListener("touchstart", baDragStart, { passive: true });
-      baTrack.addEventListener("touchmove", baDragMove, { passive: true });
-      window.addEventListener("touchend", baDragEnd);
+      // Auto-slide and drag logic removed
 
       // ── Testimonials Slider ──
       let testiIndex = 0;
