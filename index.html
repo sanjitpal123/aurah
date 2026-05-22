@@ -2460,7 +2460,25 @@
 
       @media (max-width: 600px) {
         .categories-grid {
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+        .category-card {
+          height: 240px;
+        }
+        .category-card-content {
+          padding: 1.2rem;
+          align-items: center;
+          text-align: center;
+        }
+        .category-card-icon {
+          width: 32px;
+          height: 32px;
+          margin-bottom: 0;
+        }
+        .category-card-title {
+          font-size: 1.2rem;
+          text-align: center;
         }
       }
 
@@ -3216,7 +3234,10 @@
 
       @media (max-width: 768px) {
         .section-title h2 {
-          font-size: 2.2rem;
+          font-size: 1.8rem;
+        }
+        .pricing-section .section-title h2 {
+          font-size: 2rem;
         }
 
         .pricing-card {
@@ -3244,6 +3265,70 @@
         margin-top: 10px;
         margin-bottom: 10px;
         font-weight: 600;
+      }
+      /* Center Headings & Paragraphs on Mobile */
+      @media (max-width: 768px) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .section-title,
+        .section-label,
+        .section-sub,
+        .hero-sub,
+        .hero-tagline,
+        .brands-title,
+        .about-content p,
+        .faq-header p,
+        .booking-header p,
+        .policy-container h2,
+        .policy-container p,
+        .about-grid .reveal p {
+          text-align: center !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        .section-label {
+          justify-content: center;
+        }
+
+        .hero-content,
+        .about-content,
+        .results-header,
+        .faq-header,
+        .booking-header,
+        .about-grid .reveal {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .hero-ctas,
+        .about-bullets {
+          justify-content: center;
+          align-items: center;
+        }
+
+        .about-bullet {
+          justify-content: center;
+        }
+
+        .brand-item {
+          width: 80px !important;
+          margin: 0 10px !important;
+        }
+
+        .brand-item .brand-svg {
+          max-height: 30px;
+        }
+
+        #brands {
+          padding: 2rem 5% !important;
+        }
       }
     </style>
   </head>
@@ -5264,6 +5349,58 @@
         clearInterval(baAutoSlide);
         baAutoSlide = setInterval(baNext, 4000);
       });
+
+      // Drag to slide
+      let isBaDragging = false;
+      let baStartX;
+      let baCurrentTranslate = 0;
+
+      const baDragStart = (e) => {
+        if (e.target.closest(".ba-handle")) return;
+        isBaDragging = true;
+        baTrack.style.transition = "none";
+        baStartX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+        const cardWidth = baCards[0].offsetWidth + 32;
+        baCurrentTranslate = -baIndex * cardWidth;
+      };
+
+      const baDragMove = (e) => {
+        if (!isBaDragging) return;
+        const x = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+        const walk = x - baStartX;
+        baTrack.style.transform = `translateX(${baCurrentTranslate + walk}px)`;
+      };
+
+      const baDragEnd = (e) => {
+        if (!isBaDragging) return;
+        isBaDragging = false;
+        baTrack.style.transition =
+          "transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+        const x = e.type.includes("mouse")
+          ? e.pageX
+          : e.changedTouches
+            ? e.changedTouches[0].clientX
+            : baStartX;
+        const walk = x - baStartX;
+
+        if (walk < -50) {
+          baNext();
+        } else if (walk > 50) {
+          const cardWidth = baCards[0].offsetWidth + 32;
+          baIndex = Math.max(baIndex - 1, 0);
+          baTrack.style.transform = `translateX(-${baIndex * cardWidth}px)`;
+        } else {
+          const cardWidth = baCards[0].offsetWidth + 32;
+          baTrack.style.transform = `translateX(-${baIndex * cardWidth}px)`;
+        }
+      };
+
+      baTrack.addEventListener("mousedown", baDragStart);
+      baTrack.addEventListener("mousemove", baDragMove);
+      window.addEventListener("mouseup", baDragEnd);
+      baTrack.addEventListener("touchstart", baDragStart, { passive: true });
+      baTrack.addEventListener("touchmove", baDragMove, { passive: true });
+      window.addEventListener("touchend", baDragEnd);
 
       // ── Testimonials Slider ──
       let testiIndex = 0;
