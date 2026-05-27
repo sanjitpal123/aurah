@@ -238,6 +238,43 @@
         font-style: normal;
       }
 
+      .floating-ctas {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 9999;
+      }
+
+      .floating-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .floating-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .floating-btn.whatsapp-btn {
+        background: #25D366;
+      }
+
+      .floating-btn.call-btn {
+        background: var(--gold);
+      }
+
       /* ─── NAV ─── */
       nav {
         position: fixed;
@@ -269,6 +306,10 @@
         display: flex;
         flex-direction: column;
         line-height: 1;
+      }
+
+      .mobile-nav-ctas {
+        display: none;
       }
 
       .nav-logo-main {
@@ -2183,12 +2224,32 @@
       /* ─── MOBILE ─── */
       @media (max-width: 900px) {
         nav {
-          justify-content: center;
+          justify-content: space-between;
+        }
+
+        .mobile-nav-ctas {
+          display: flex;
+          align-items: center;
+        }
+
+        .mobile-header-call {
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: #ffffff;
+          background-color: var(--gold);
+          text-decoration: none;
+          border: 2px solid #ffffff;
+          padding: 6px 16px;
+          border-radius: 25px;
+          display: inline-block;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .nav-logo {
-          align-items: center;
-          text-align: center;
+          align-items: flex-start;
+          text-align: left;
+          margin: 0;
+          padding: 0;
         }
 
         .nav-links {
@@ -3375,7 +3436,7 @@
     <!-- ── NAV ── -->
     <nav id="mainNav">
       <div class="nav-logo">
-        <img src="assets/images/aurah_logo.png" alt="Aurah by Koyel Logo" style="height: 60px; width: auto;" />
+        <img src="assets/images/logoaurah.png" alt="Aurah by Koyel Logo" style="height: 60px; width: auto;" />
       </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -3384,6 +3445,9 @@
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#booking" class="nav-cta">Book Now</a></li>
       </ul>
+      <div class="mobile-nav-ctas">
+        <a href="tel:+919123093939" class="mobile-header-call">Call Us Now</a>
+      </div>
     </nav>
 
     <!-- ── HERO ── -->
@@ -4776,7 +4840,7 @@
     <footer id="footer">
       <div class="footer-grid">
         <div>
-          <img src="assets/images/aurah_logo.png" alt="Aurah by Koyel Logo" style="height: 70px; width: auto; margin-bottom: 0.5rem;" />
+          <img src="assets/images/logoaurah.png" alt="Aurah by Koyel Logo" style="height: 70px; width: auto; margin-bottom: 0.5rem;" />
           <p class="footer-about">
             Premium beauty parlour offering expert hair styling, makeup,
             skincare, and spa services. Your beauty is our passion.
@@ -4880,11 +4944,7 @@
       </div>
     </footer>
 
-    <!-- ── WHATSAPP FLOAT ── -->
-    <a href="https://wa.me/919123093939" class="wa-float" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span class="wa-tooltip">Chat on WhatsApp</span>
-    </a>
+
 
     <!-- ── EXIT POPUP ── -->
     <div class="exit-overlay" id="exitOverlay">
@@ -5148,5 +5208,9 @@
         }
       }
     </script>
+    <div class="floating-ctas">
+      <a href="tel:+919123093939" class="floating-btn call-btn" title="Call Us"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://wa.me/919123093939" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
   </body>
 </html>
